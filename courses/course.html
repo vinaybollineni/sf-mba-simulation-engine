@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course — Stanford MBA Simulation</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">
+      <div class="nav-logo-icon">SF</div>
+      <div>
+        <span class="logo-text">MBA Simulation</span>
+        <span class="logo-sub">Stanford-Style Program</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../curriculum.html">Curriculum</a></li>
+      <li><a href="../dashboard.html">Dashboard</a></li>
+      <li><a href="../assignments.html">Assignments</a></li>
+      <li><a href="../resources.html">Resources</a></li>
+    </ul>
+    <div class="nav-hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- Page header — filled by JS -->
+<div class="page-header" id="course-header">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="../index.html">Home</a> /
+      <a href="../curriculum.html">Curriculum</a> /
+      <span id="header-code">Loading…</span>
+    </div>
+    <h1 id="header-title">Loading course…</h1>
+    <p id="header-meta"></p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div id="course-content" style="display:grid; grid-template-columns:1fr 300px; gap:32px; align-items:start;">
+
+      <!-- Loading state -->
+      <div style="text-align:center; padding:60px 0; color:var(--text-muted);">
+        <div style="font-size:32px; margin-bottom:12px;">⏳</div>
+        <div>Loading course content…</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-bottom">
+      <div>© 2026 MBA Simulation Engine · <span>Vinay Bollineni</span> · Class of 2028</div>
+      <div><a href="../curriculum.html" style="color:rgba(255,255,255,0.6); text-decoration:none;">← All Courses</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/app.js"></script>
+<script>
+(function () {
+  /* ── resolve course code from URL ─────────────────────────── */
+  const params = new URLSearchParams(window.location.search);
+  const rawCode = params.get('code') || '';
+  // normalise: "STAT102" → "STAT 102"
+  const code = rawCode.replace(/([A-Z]+)(\d)/, '$1 $2');
+
+  if (!code) {
+    document.getElementById('header-title').textContent = 'Course not found';
+    return;
+  }
+
+  /* ── fetch program data ────────────────────────────────────── */
+  fetch('../data/program.json')
+    .then(r => r.json())
+    .then(data => {
+      // flatten all courses from all quarters
+      const allCourses = [];
+      const years = [data.year1, data.year2];
+      years.forEach(yr => {
+        yr.quarters.forEach(q => {
+          q.courses.forEach(c => allCourses.push({ ...c, quarter: q }));
+        });
+      });
+
+      const course = allCourses.find(c => c.code === code);
+      if (!course) {
+        document.getElementById('header-title').textContent = `Course "${code}" not found`;
+        return;
+      }
+
+      // set page title
+      document.title = `${course.code} — ${course.title} | Stanford MBA Simulation`;
+
+      // fill header
+      document.getElementById('header-code').textContent = course.code;
+      document.getElementById('header-title').textContent = `${course.code} — ${course.title}`;
+      document.getElementById('header-meta').textContent =
+        `${course.quarter.title} · ${course.quarter.months} · ${course.weeks} Weeks`;
+
+      // status badge colour
+      const statusColour = course.status === 'current'
+        ? '#2E7D32' : course.status === 'upcoming' ? '#1565C0' : '#555';
+      const statusLabel = course.status === 'current' ? 'Active Now'
+        : course.status === 'upcoming' ? 'Upcoming' : 'Scheduled';
+
+      /* ── build objectives list ─────────────────────────────── */
+      const objHtml = (course.objectives || []).map(o =>
+        `<li style="margin-bottom:8px; color:var(--text-secondary); font-size:14px; line-height:1.6;">${o}</li>`
+      ).join('');
+
+      /* ── build weekly topics ───────────────────────────────── */
+      const weeksHtml = (course.weeklyTopics || []).map((t, i) => {
+        const [label, ...rest] = t.split(':');
+        const detail = rest.join(':').trim();
+        return `
+          <div style="display:flex; gap:16px; padding:14px 0; border-bottom:1px solid var(--border);">
+            <div style="min-width:32px; height:32px; background:var(--stanford-red); color:white;
+                        border-radius:50%; display:flex; align-items:center; justify-content:center;
+                        font-size:12px; font-weight:700; flex-shrink:0;">${i + 1}</div>
+            <div>
+              <div style="font-size:13px; font-weight:700; color:var(--text-primary);">${label.replace('Week ' + (i+1), '').trim() || label}</div>
+              ${detail ? `<div style="font-size:13px; color:var(--text-secondary); margin-top:3px;">${detail}</div>` : ''}
+            </div>
+          </div>`;
+      }).join('');
+
+      /* ── build assignments list ────────────────────────────── */
+      const assignHtml = (course.assignments || []).map(a =>
+        `<div style="display:flex; gap:12px; align-items:flex-start; padding:10px 0; border-bottom:1px solid var(--border);">
+          <div style="width:8px; height:8px; border-radius:50%; background:var(--stanford-red); margin-top:5px; flex-shrink:0;"></div>
+          <div style="font-size:13px; color:var(--text-secondary); line-height:1.6;">${a}</div>
+        </div>`
+      ).join('');
+
+      /* ── build cases list ──────────────────────────────────── */
+      const casesHtml = (course.cases || []).map(c =>
+        `<div style="font-size:13px; color:var(--text-secondary); padding:6px 0; border-bottom:1px solid var(--border); line-height:1.5;">
+          <span style="color:var(--stanford-red); font-weight:600;">▸</span> ${c}
+        </div>`
+      ).join('');
+
+      /* ── build resources list ──────────────────────────────── */
+      const resHtml = (course.resources || []).map(r =>
+        `<div style="font-size:13px; color:var(--text-secondary); padding:6px 0; border-bottom:1px solid var(--border);">
+          <span style="color:#1565C0; font-weight:600;">→</span> ${r}
+        </div>`
+      ).join('');
+
+      /* ── find prev / next course ───────────────────────────── */
+      const idx = allCourses.findIndex(c => c.code === code);
+      const prev = idx > 0 ? allCourses[idx - 1] : null;
+      const next = idx < allCourses.length - 1 ? allCourses[idx + 1] : null;
+      const navCode = c => c.code.replace(/\s+/g, '');
+      const prevHtml = prev
+        ? `<a href="course.html?code=${navCode(prev)}" class="btn btn-secondary" style="font-size:13px;">← ${prev.code}</a>` : '';
+      const nextHtml = next
+        ? `<a href="course.html?code=${navCode(next)}" class="btn btn-primary" style="font-size:13px;">${next.code} →</a>` : '';
+
+      /* ── textbook display ──────────────────────────────────── */
+      const tbMain = course.textbook || 'See resources page';
+      const tbBridge = course.textbook_free_bridge || '';
+      const tbRef = course.textbook_reference || '';
+
+      /* ── render full layout ────────────────────────────────── */
+      document.getElementById('course-content').innerHTML = `
+
+        <!-- MAIN COLUMN -->
+        <div>
+
+          <!-- Status + description -->
+          <div class="card mb-24">
+            <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px; flex-wrap:wrap;">
+              <span style="display:inline-block; background:${statusColour}; color:white; font-size:11px;
+                           font-weight:700; padding:4px 12px; border-radius:12px; text-transform:uppercase;
+                           letter-spacing:0.5px;">${statusLabel}</span>
+              <span style="font-size:13px; color:var(--text-muted);">${course.weeks} weeks · ~${course.weeks * 12} hrs total</span>
+            </div>
+            <p style="font-size:15px; color:var(--text-secondary); line-height:1.7; margin:0;">${course.description}</p>
+          </div>
+
+          <!-- Learning Objectives -->
+          <div class="card mb-24">
+            <h2 style="font-size:16px; font-weight:700; margin-bottom:16px; color:var(--text-primary);">
+              Learning Objectives
+            </h2>
+            <ul style="list-style:none; padding:0; margin:0;">${objHtml}</ul>
+          </div>
+
+          <!-- Weekly Syllabus -->
+          <div class="card mb-24">
+            <h2 style="font-size:16px; font-weight:700; margin-bottom:4px; color:var(--text-primary);">
+              ${course.weeks}-Week Syllabus
+            </h2>
+            <p style="font-size:13px; color:var(--text-muted); margin-bottom:16px;">One topic per week. Each week: lecture summary + reading + case + assignment.</p>
+            <div>${weeksHtml}</div>
+          </div>
+
+          <!-- Assignments -->
+          ${course.assignments && course.assignments.length ? `
+          <div class="card mb-24">
+            <h2 style="font-size:16px; font-weight:700; margin-bottom:16px; color:var(--text-primary);">
+              Assignments & Deliverables
+            </h2>
+            ${assignHtml}
+          </div>` : ''}
+
+          <!-- Prev / Next navigation -->
+          <div style="display:flex; justify-content:space-between; padding-top:24px;">
+            ${prevHtml}
+            <a href="../curriculum.html" style="font-size:13px; color:var(--text-muted); align-self:center; text-decoration:none;">← Back to Curriculum</a>
+            ${nextHtml}
+          </div>
+
+        </div>
+
+        <!-- SIDEBAR -->
+        <div>
+
+          <!-- Textbook -->
+          <div class="card mb-16">
+            <h3 style="font-size:14px; font-weight:700; margin-bottom:12px; color:var(--stanford-red);">📚 Textbook</h3>
+            <div style="font-size:13px; color:var(--text-secondary); line-height:1.6; margin-bottom:8px;">${tbMain}</div>
+            ${tbBridge ? `<div style="font-size:12px; color:var(--text-muted); margin-top:8px; padding-top:8px; border-top:1px solid var(--border);">Free bridge: ${tbBridge}</div>` : ''}
+            ${tbRef ? `<div style="font-size:12px; color:var(--text-muted); margin-top:8px; padding-top:8px; border-top:1px solid var(--border);">Reference: ${tbRef}</div>` : ''}
+          </div>
+
+          <!-- Cases -->
+          ${course.cases && course.cases.length ? `
+          <div class="card mb-16">
+            <h3 style="font-size:14px; font-weight:700; margin-bottom:12px; color:var(--stanford-red);">📋 Cases</h3>
+            ${casesHtml}
+            <div style="margin-top:10px;">
+              <a href="../resources.html" style="font-size:12px; color:var(--stanford-red);">Browse Cases Hub →</a>
+            </div>
+          </div>` : ''}
+
+          <!-- Resources -->
+          ${course.resources && course.resources.length ? `
+          <div class="card mb-16">
+            <h3 style="font-size:14px; font-weight:700; margin-bottom:12px; color:var(--stanford-red);">🔗 Resources</h3>
+            ${resHtml}
+            <div style="margin-top:10px;">
+              <a href="../resources.html" style="font-size:12px; color:var(--stanford-red);">Full Resource Library →</a>
+            </div>
+          </div>` : ''}
+
+          <!-- Quick actions -->
+          <div class="card mb-16">
+            <h3 style="font-size:14px; font-weight:700; margin-bottom:12px; color:var(--stanford-red);">⚡ Quick Links</h3>
+            <div style="display:flex; flex-direction:column; gap:8px;">
+              <a href="../dashboard.html" style="display:flex; justify-content:space-between; align-items:center;
+                 padding:9px 12px; background:var(--bg-secondary); border-radius:6px;
+                 text-decoration:none; color:var(--text-primary); font-size:13px;">
+                <span>Weekly Dashboard</span><span style="color:var(--stanford-red);">→</span>
+              </a>
+              <a href="../resources.html" style="display:flex; justify-content:space-between; align-items:center;
+                 padding:9px 12px; background:var(--bg-secondary); border-radius:6px;
+                 text-decoration:none; color:var(--text-primary); font-size:13px;">
+                <span>Resource Library</span><span style="color:var(--stanford-red);">→</span>
+              </a>
+              <a href="../curriculum.html" style="display:flex; justify-content:space-between; align-items:center;
+                 padding:9px 12px; background:var(--bg-secondary); border-radius:6px;
+                 text-decoration:none; color:var(--text-primary); font-size:13px;">
+                <span>Full Curriculum</span><span style="color:var(--stanford-red);">→</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      `;
+    })
+    .catch(err => {
+      document.getElementById('course-content').innerHTML =
+        `<div style="padding:40px; color:red;">Error loading course data: ${err.message}</div>`;
+    });
+}());
+</script>
+</body>
+</html>

@@ -183,3 +183,27 @@ document.querySelectorAll('[data-deadline]').forEach(el => {
   if (days <= 3) el.style.color = '#C62828';
   else if (days <= 7) el.style.color = '#E65100';
 });
+
+// ---- Auto-wire "Open Course →" buttons on curriculum page ----
+document.querySelectorAll('.course-card').forEach(card => {
+  const codeEl = card.querySelector('.course-code');
+  const metaEl = card.querySelector('.course-meta');
+  if (!codeEl || !metaEl) return;
+
+  // Skip cards that already have a button (e.g. ACCT 101 has its own dedicated page)
+  if (metaEl.querySelector('.btn')) return;
+
+  const rawCode = codeEl.textContent.trim();           // "STAT 102"
+  const urlCode = rawCode.replace(/\s+/g, '');         // "STAT102"
+
+  // Remove the placeholder badge (Quarter 2, Year 2, etc.)
+  const badge = metaEl.querySelector('.badge');
+  if (badge) badge.remove();
+
+  const btn = document.createElement('a');
+  btn.href = `courses/course.html?code=${urlCode}`;
+  btn.className = 'btn btn-primary';
+  btn.style.cssText = 'font-size:12px; padding:6px 12px;';
+  btn.textContent = 'Open Course →';
+  metaEl.appendChild(btn);
+});
