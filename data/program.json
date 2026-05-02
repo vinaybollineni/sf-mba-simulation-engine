@@ -65,7 +65,7 @@
               "Build regression models for forecasting",
               "Communicate data insights to non-technical stakeholders"
             ],
-            "textbook": "Statistics for Business and Economics — Anderson, Sweeney, Williams + MIT OCW 15.075 (Applied Statistics for Engineers & Scientists)",
+            "textbook": "Statistics — Freedman, Pisani & Purves (UC Berkeley; the gold standard used at MIT Sloan, Wharton; buy used ~$25) + MIT OCW 15.075 Applied Statistics for Engineers & Scientists (free)",
             "cases": ["MIT Sloan case studies on data-driven decisions (free)", "Okta product analytics scenario"],
             "resources": ["MIT OCW 15.075 Applied Statistics", "Khan Academy Statistics", "Damodaran base rate data sets"],
             "weeklyTopics": [
@@ -75,7 +75,7 @@
               "Week 4: Regression Analysis — Predicting Customer Behavior",
               "Week 5: Correlation vs. Causation in Business",
               "Week 6: Forecasting Models — Time Series & Trend Analysis",
-              "Week 7: Decision Trees & Risk Analysis",
+              "Week 7: Simulation, Scenario Analysis & Monte Carlo Methods",
               "Week 8: Final Case — Data-Driven Marketing Strategy for a SaaS Product"
             ],
             "assignments": [
@@ -97,7 +97,7 @@
               "Analyze leadership styles and their situational effectiveness",
               "Build your personal leadership philosophy"
             ],
-            "textbook": "Radical Candor — Kim Scott (Stanford GSB leadership courses) + Multipliers — Liz Wiseman (both free on Internet Archive)",
+            "textbook": "The Fearless Organization — Amy Edmondson (Harvard Business School, psychological safety framework; buy used ~$20) + Radical Candor — Kim Scott (Stanford GSB supplement; free on Internet Archive)",
             "cases": ["HBS Case: Satya Nadella at Microsoft — Instilling a Growth Mindset (~$10)", "MIT Sloan Leadership & Ethics free cases", "Stanford GSB Podcases (free)"],
             "resources": ["Radical Candor — Kim Scott (Archive.org free)", "Multipliers — Liz Wiseman (Archive.org free)", "MIT Sloan Leadership Cases (free)", "First Round Review leadership articles"],
             "weeklyTopics": [
@@ -105,7 +105,7 @@
               "Week 2: Group Dynamics & Team Effectiveness",
               "Week 3: Leadership Theories — Transformational, Servant, Situational",
               "Week 4: Power, Politics & Influence in Organizations",
-              "Week 5: Conflict Resolution & Negotiation",
+              "Week 5: Psychological Safety & High-Performance Team Cultures",
               "Week 6: Organizational Culture & Change",
               "Week 7: Cross-Functional Communication",
               "Week 8: Final: Personal Leadership Development Plan"
@@ -148,13 +148,43 @@
               "Week 6: Dividend Policy & Share Buybacks",
               "Week 7: DCF Valuation — Building a Full Model",
               "Week 8: Comparable Company Analysis (Comps)",
-              "Week 9: M&A Basics — Deal Structure & Synergies",
+              "Week 9: Real Options & Strategic Investment Decisions",
               "Week 10: Final: Value a SaaS Company from scratch"
             ],
             "assignments": [
               "DCF model for a public tech company",
               "Capital structure analysis: Okta vs. competitors",
               "Final: Full valuation report on a startup of your choice"
+            ]
+          },
+          {
+            "id": "core-glob250",
+            "code": "GLOB 250",
+            "title": "Global Business & Macroeconomic Environment",
+            "weeks": 6,
+            "status": "locked",
+            "description": "Understand the macro forces shaping business: GDP cycles, trade policy, currency risk, and geopolitical strategy. Required at Harvard (BGIE), Wharton, and every top program.",
+            "objectives": [
+              "Interpret macroeconomic indicators and their impact on business strategy",
+              "Assess currency and country risk for global operations",
+              "Evaluate international market entry decisions using the CAGE Distance Framework",
+              "Understand how geopolitics reshapes competitive landscapes"
+            ],
+            "textbook": "Redefining Global Strategy — Pankaj Ghemawat (IESE, Harvard; buy used ~$30) + IMF World Economic Outlook reports (free at imf.org)",
+            "cases": ["HBS: Airbnb Global Expansion & Regulatory Risk (~$10)", "MIT Sloan: Currency Risk in Emerging Markets (free)", "Okta FY2025 10-K International Revenue Analysis (SEC EDGAR, free)"],
+            "resources": ["IMF World Economic Outlook (free)", "World Bank Open Data (free)", "Ghemawat CAGE Distance Framework overview (free)", "Economist Intelligence Unit country reports"],
+            "weeklyTopics": [
+              "Week 1: Macroeconomics for Executives — GDP, Inflation, Interest Rates & Business Cycles",
+              "Week 2: International Trade Theory, Globalization & Supply Chain Resilience",
+              "Week 3: Foreign Exchange, Currency Risk & Hedging Strategy",
+              "Week 4: Geopolitical Risk & Country Risk Assessment — CAGE Distance Framework",
+              "Week 5: Emerging Markets Strategy — India, Southeast Asia, Middle East",
+              "Week 6: Final: Global Market Entry Recommendation for a Tech Company"
+            ],
+            "assignments": [
+              "Macro environment scan: Map GDP and currency risk for Okta's top 5 international markets",
+              "Country risk assessment for a hypothetical SaaS market entry",
+              "Final: Global expansion strategy memo — choose a market, justify the entry mode"
             ]
           },
           {
@@ -180,7 +210,7 @@
               "Week 3: STP — Segmentation, Targeting, Positioning",
               "Week 4: Brand Strategy & Brand Equity",
               "Week 5: B2B Marketing — Enterprise Sales Cycles",
-              "Week 6: Digital Marketing — SEO, SEM, Content, Email",
+              "Week 6: Digital Marketing & PLG — SEO, SEM, Product-Led Growth, Content",
               "Week 7: Pricing Strategy",
               "Week 8: Product Launch Strategy",
               "Week 9: Customer Acquisition & Retention Metrics (CAC, LTV, NRR)",
@@ -263,6 +293,36 @@
               "Five Forces analysis of the identity security market",
               "Disruption case study: How Okta displaced on-premise IAM",
               "Final: Strategic plan for a new business or product line"
+            ]
+          },
+          {
+            "id": "core-nego250",
+            "code": "NEGO 250",
+            "title": "Negotiation & Conflict Resolution",
+            "weeks": 6,
+            "status": "locked",
+            "description": "Required at Harvard, Wharton, and Stanford. Master integrative negotiation, BATNA analysis, and the psychology of influence. Among the highest direct-ROI courses in any MBA program.",
+            "objectives": [
+              "Apply BATNA, ZOPA, and reservation point frameworks to any negotiation",
+              "Distinguish distributive vs. integrative bargaining strategies",
+              "Manage psychological biases and anchoring effects in high-stakes deals",
+              "Lead multi-party negotiations in M&A, partnerships, and executive hiring"
+            ],
+            "textbook": "Getting to Yes — Fisher, Ury & Patton (Harvard Law/HBS foundational text; free on Internet Archive) + Negotiation Genius — Malhotra & Bazerman (Harvard Business School; buy used ~$15)",
+            "cases": ["HBS: Sally Soprano Negotiation Role-Play (sample free)", "HBS: Elmwood Hospital Dispute (~$10)", "MIT Sloan Negotiation Simulations (free)"],
+            "resources": ["Getting to Yes — Fisher, Ury & Patton (Archive.org free)", "Negotiation Genius — Malhotra & Bazerman (buy)", "Harvard Program on Negotiation Insights (free)", "Chris Voss: Never Split the Difference (supplement, buy)"],
+            "weeklyTopics": [
+              "Week 1: Foundations — Distributive vs. Integrative Bargaining",
+              "Week 2: BATNA, ZOPA & Reservation Points — Mapping the Negotiation Space",
+              "Week 3: Anchoring, Framing & Psychological Biases in Negotiation",
+              "Week 4: Multi-Party Negotiations, Coalition Building & Deal Design",
+              "Week 5: Business Negotiations — M&A Deals, Partnerships, Executive Compensation & Salary",
+              "Week 6: Final: Live Negotiation Simulation — Acquire a Company at the Best Price"
+            ],
+            "assignments": [
+              "BATNA analysis: Map the negotiation space for a real vendor or partnership deal at Okta",
+              "Negotiation debrief: Analyze a past negotiation you lost and what you would do differently",
+              "Final: Lead a simulated M&A negotiation from first offer to signed term sheet"
             ]
           },
           {
@@ -603,7 +663,7 @@
               "Structure fundraising rounds and term sheets",
               "Manage cash flow and runway as a founder"
             ],
-            "textbook": "Venture Deals — Brad Feld; The Hard Thing About Hard Things — Ben Horowitz",
+            "textbook": "Venture Deals — Brad Feld & Mendelson (free on Archive) + Venture Capital and the Finance of Innovation — Metrick & Yasuda (Wharton; buy used ~$50)",
             "resources": ["a16z Startup Finance Guide", "Y Combinator: How to Raise Your First Round", "Sequoia Arc Program"],
             "weeklyTopics": [
               "Week 1: VC Fund Mechanics — How VCs Make Money",
