@@ -33,7 +33,18 @@
   <div class="container">
     <div class="breadcrumb"><a href="index.html">Home</a> / Resources</div>
     <h1>Resource Library</h1>
-    <p>Textbooks, case studies, podcasts, and online courses for your entire 2-year program</p>
+    <p>Textbooks, case studies, podcasts, and online courses — all linked and access-labeled</p>
+  </div>
+</div>
+
+<!-- Access Legend -->
+<div style="background:white; border-bottom:1px solid var(--border); padding:12px 0;">
+  <div class="container" style="display:flex; gap:16px; flex-wrap:wrap; align-items:center; font-size:12px;">
+    <strong style="color:var(--text-secondary);">Access key:</strong>
+    <span class="resource-access free" style="margin:0;">✓ Free</span>
+    <span class="resource-access archive" style="margin:0;">📥 Free on Internet Archive</span>
+    <span class="resource-access buy" style="margin:0;">📚 Buy or Library</span>
+    <span class="resource-access paid" style="margin:0;">💳 Paid</span>
   </div>
 </div>
 
@@ -44,335 +55,413 @@
     <div class="tabs" data-group="resources">
       <button class="tab-btn active" data-tab="current" data-group="resources">Current Course</button>
       <button class="tab-btn" data-tab="books" data-group="resources">All Textbooks</button>
-      <button class="tab-btn" data-tab="cases" data-group="resources">Case Studies</button>
       <button class="tab-btn" data-tab="online" data-group="resources">Online Courses</button>
       <button class="tab-btn" data-tab="media" data-group="resources">Podcasts & Reading</button>
     </div>
 
-    <!-- Current Course -->
+    <!-- ===================== CURRENT COURSE TAB ===================== -->
     <div class="tab-content active" data-tab="current" data-group="resources">
-      <div class="alert alert-info">
+
+      <div class="alert alert-success">
         <span>📚</span>
-        <div><strong>Resources for ACCT 101 — Financial Accounting & Analysis</strong> (Weeks 1–10)</div>
+        <div><strong>Resources for ACCT 101 — Financial Accounting & Analysis</strong> · Weeks 1–10 · All links verified</div>
       </div>
 
+      <!-- Primary Textbook -->
       <div class="resource-category">
         <h3>📖 Primary Textbook</h3>
         <div class="resource-list">
-          <div class="resource-item">
+          <a href="https://archive.org/details/financialmanager0000horn_f2m2" target="_blank" class="resource-item">
             <div class="resource-type">Textbook</div>
-            <h4>Financial Accounting, 5th Edition</h4>
-            <p>Horngren, Sundem & Elliott — The standard accounting textbook used at Stanford GSB and Wharton. Clear, practical, and grounded in real company examples.</p>
-            <div style="margin-top:8px; font-size:12px; color:var(--stanford-red);">Chapters 1-2 due Week 1</div>
-          </div>
+            <h4>Financial & Managerial Accounting — Horngren, Sundem & Elliott</h4>
+            <p>The standard accounting textbook used at Stanford GSB and Wharton. Used throughout all 10 weeks of ACCT 101. Chapters 1–2 due Week 1.</p>
+            <div class="resource-access archive">📥 Free — Borrow on Internet Archive</div>
+          </a>
+          <a href="https://archive.org/details/introductiontofi0000horn" target="_blank" class="resource-item">
+            <div class="resource-type">Textbook (Alt Edition)</div>
+            <h4>Introduction to Financial Accounting — Horngren</h4>
+            <p>Alternate edition — slightly lighter and more accessible. Good companion for early weeks.</p>
+            <div class="resource-access archive">📥 Free — Borrow on Internet Archive</div>
+          </a>
         </div>
       </div>
 
+      <!-- Video Resources -->
       <div class="resource-category">
-        <h3>🎥 Video Resources (Free)</h3>
+        <h3>🎥 Video Resources</h3>
         <div class="resource-list">
-          <div class="resource-item">
+          <a href="https://www.khanacademy.org/economics-finance-domain/core-finance/accounting-and-financial-stateme" target="_blank" class="resource-item">
             <div class="resource-type">Video Series</div>
             <h4>Khan Academy — Accounting & Financial Statements</h4>
-            <p>Excellent free series covering all fundamentals. Start with "Accounting and Financial Statements" series. Very clear explanations for non-accountants.</p>
-          </div>
-          <div class="resource-item">
-            <div class="resource-type">Video Course</div>
+            <p>Complete free series covering all ACCT 101 fundamentals. Start with "Accounting and Financial Statements." Crystal-clear for non-accountants. Start here Week 1.</p>
+            <div class="resource-access free">✓ Free — Khan Academy</div>
+          </a>
+          <a href="https://www.youtube.com/@AccountingStuff/videos" target="_blank" class="resource-item">
+            <div class="resource-type">YouTube Channel</div>
+            <h4>Accounting Stuff — YouTube</h4>
+            <p>Best YouTube channel for accounting fundamentals. 1M+ subscribers, 200+ short clear videos. Watch alongside every week of ACCT 101.</p>
+            <div class="resource-access free">✓ Free — YouTube</div>
+          </a>
+          <a href="https://ocw.mit.edu/courses/15-515-financial-accounting-fall-2003/" target="_blank" class="resource-item">
+            <div class="resource-type">Full Course</div>
             <h4>MIT OpenCourseWare — Financial Accounting (15.515)</h4>
-            <p>Free MIT Sloan course materials. Excellent lecture notes and problem sets that supplement the textbook.</p>
-          </div>
-          <div class="resource-item">
-            <div class="resource-type">YouTube</div>
-            <h4>Accounting Stuff (YouTube Channel)</h4>
-            <p>Best YouTube channel for accounting fundamentals. Short, clear videos on every concept in this course. Highly recommended as a complement to reading.</p>
-          </div>
+            <p>Complete MBA-level financial accounting course. Free lecture notes, assignments, problem sets, and exams — the same rigor as MIT Sloan. Excellent supplement to the textbook.</p>
+            <div class="resource-access free">✓ Free — MIT OCW</div>
+          </a>
         </div>
       </div>
 
+      <!-- Live Case Studies -->
       <div class="resource-category">
-        <h3>🏢 Case Studies</h3>
+        <h3>🏢 Live Case Studies</h3>
         <div class="resource-list">
-          <div class="resource-item">
-            <div class="resource-type">Live Case · Week 1</div>
-            <h4>Okta Inc. — Annual Report (10-K)</h4>
-            <p>Download from SEC EDGAR. Find Okta's most recent 10-K. Your Week 1 case uses this — identify all balance sheet line items and explain each one.</p>
-            <div style="margin-top:8px; font-size:12px; color:var(--stanford-red);">🔗 sec.gov → Search "Okta" → 10-K</div>
-          </div>
-          <div class="resource-item">
-            <div class="resource-type">HBS Case · Week 5</div>
-            <h4>Netflix Inc. — Financial Statement Analysis</h4>
-            <p>Analyze Netflix's transition from DVD to streaming from a financial accounting perspective. Focus on how deferred revenue, content assets, and subscriber metrics changed.</p>
-          </div>
-          <div class="resource-item">
-            <div class="resource-type">Live Case · Week 10</div>
-            <h4>Okta Inc. — Full Financial Analysis (Final)</h4>
-            <p>Your final project: comprehensive analysis of all three financial statements, 5 years of trend data, ratio analysis, and an executive summary memo.</p>
-          </div>
+          <a href="https://www.sec.gov/Archives/edgar/data/1660134/000166013425000049/okta-20250131.htm" target="_blank" class="resource-item">
+            <div class="resource-type">Live Case · Weeks 1–10</div>
+            <h4>Okta Inc. — 10-K Annual Report (FY2025)</h4>
+            <p>Your primary live case. Okta's most recent 10-K filed with the SEC. Used every week: Week 1 (balance sheet), Week 2 (income statement), Week 4 (cash flow), Week 10 (full analysis).</p>
+            <div class="resource-access free">✓ Free — SEC EDGAR</div>
+          </a>
+          <a href="https://corporatefinanceinstitute.com/resources/accounting/financial-ratios/" target="_blank" class="resource-item">
+            <div class="resource-type">Reference · Weeks 5–6</div>
+            <h4>CFI — Financial Ratios Guide</h4>
+            <p>Comprehensive reference for all 15+ financial ratios you'll calculate in Weeks 5–6. Bookmark this page — use it alongside the Okta analysis.</p>
+            <div class="resource-access free">✓ Free — Corporate Finance Institute</div>
+          </a>
         </div>
       </div>
 
+      <!-- Tools -->
       <div class="resource-category">
-        <h3>🛠️ Tools & Templates</h3>
+        <h3>🛠️ Tools & References</h3>
         <div class="resource-list">
-          <div class="resource-item">
-            <div class="resource-type">Excel Template</div>
-            <h4>3-Statement Financial Model Template</h4>
-            <p>A blank template for the mid-course project. Build your own income statement, balance sheet, and cash flow statement that are properly linked.</p>
-            <div style="margin-top:8px; font-size:12px; color:var(--stanford-red);">Build this yourself — the process of building it IS the learning</div>
-          </div>
-          <div class="resource-item">
-            <div class="resource-type">Reference</div>
-            <h4>Investopedia Financial Ratios Guide</h4>
-            <p>Comprehensive reference for all financial ratios you'll need in Weeks 5-6. Bookmark investopedia.com for quick formula lookups.</p>
-          </div>
-          <div class="resource-item">
-            <div class="resource-type">Reference</div>
-            <h4>SEC EDGAR — Public Company Filings</h4>
-            <p>All public company filings. You'll use this for every real-company analysis in the program. Learn to navigate it — it's your primary data source.</p>
-            <div style="margin-top:8px; font-size:12px; color:var(--stanford-red);">🔗 sec.gov/cgi-bin/browse-edgar</div>
-          </div>
+          <a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=OKTA&type=10-K&dateb=&owner=include&count=10" target="_blank" class="resource-item">
+            <div class="resource-type">Data Source</div>
+            <h4>SEC EDGAR — Okta Filings Page</h4>
+            <p>All Okta filings. Use this to access 10-Ks across multiple years for the trend analysis in Week 10's final project.</p>
+            <div class="resource-access free">✓ Free — SEC.gov</div>
+          </a>
+          <a href="https://corporatefinanceinstitute.com/resources/excel/three-statement-model/" target="_blank" class="resource-item">
+            <div class="resource-type">Template Guide</div>
+            <h4>CFI — 3-Statement Financial Model Guide</h4>
+            <p>Step-by-step guide to building your income statement, balance sheet, and cash flow model. Used for the Week 5 mid-course project.</p>
+            <div class="resource-access free">✓ Free — CFI</div>
+          </a>
         </div>
       </div>
     </div>
 
-    <!-- All Textbooks -->
+    <!-- ===================== ALL TEXTBOOKS TAB ===================== -->
     <div class="tab-content" data-tab="books" data-group="resources">
-      <div style="display:grid; gap:24px;">
-        <div class="resource-category">
-          <h3>📊 Finance & Accounting</h3>
-          <div class="resource-list">
-            <div class="resource-item">
-              <div class="resource-type">ACCT 101</div>
-              <h4>Financial Accounting — Horngren, Sundem & Elliott</h4>
-              <p>Year 1 core accounting textbook</p>
-            </div>
-            <div class="resource-item">
-              <div class="resource-type">FIN 201</div>
-              <h4>Principles of Corporate Finance — Brealey, Myers & Allen</h4>
-              <p>The definitive corporate finance textbook. Used at every top MBA program.</p>
-            </div>
-            <div class="resource-item">
-              <div class="resource-type">FIN 702</div>
-              <h4>Venture Deals — Brad Feld & Jason Mendelson</h4>
-              <p>The startup funding bible. Everything you need to know about VC term sheets.</p>
-            </div>
-            <div class="resource-item">
-              <div class="resource-type">FIN 702</div>
-              <h4>The Hard Thing About Hard Things — Ben Horowitz</h4>
-              <p>Essential reading on startup leadership and the reality of building a company.</p>
-            </div>
-          </div>
-        </div>
 
-        <div class="resource-category">
-          <h3>♟️ Strategy</h3>
-          <div class="resource-list">
-            <div class="resource-item">
-              <div class="resource-type">STR 301</div>
-              <h4>Competitive Strategy — Michael Porter</h4>
-              <p>The foundational text. Five Forces, generic strategies, value chain.</p>
-            </div>
-            <div class="resource-item">
-              <div class="resource-type">STR 301</div>
-              <h4>Good Strategy Bad Strategy — Richard Rumelt</h4>
-              <p>The clearest modern framework for what strategy actually is (and isn't).</p>
-            </div>
-            <div class="resource-item">
-              <div class="resource-type">PM 801</div>
-              <h4>Platform Revolution — Parker, Van Alstyne & Choudary</h4>
-              <p>The definitive guide to platform business models and network effects.</p>
-            </div>
-          </div>
+      <!-- Finance & Accounting -->
+      <div class="resource-category">
+        <h3>📊 Finance & Accounting</h3>
+        <div class="resource-list">
+          <a href="https://archive.org/details/financialmanager0000horn_f2m2" target="_blank" class="resource-item">
+            <div class="resource-type">ACCT 101</div>
+            <h4>Financial & Managerial Accounting — Horngren, Sundem & Elliott</h4>
+            <p>Year 1 core accounting textbook. Used Weeks 1–10 of ACCT 101.</p>
+            <div class="resource-access archive">📥 Free — Internet Archive</div>
+          </a>
+          <a href="https://archive.org/details/principlesofcorp0000brea_p1a2" target="_blank" class="resource-item">
+            <div class="resource-type">FIN 201</div>
+            <h4>Principles of Corporate Finance — Brealey, Myers & Allen</h4>
+            <p>The definitive corporate finance textbook. Used at every top MBA program worldwide. DCF, WACC, capital structure, M&A.</p>
+            <div class="resource-access archive">📥 Free — Internet Archive</div>
+          </a>
+          <a href="https://archive.org/details/venturedealsbesm0000feld_f5r7" target="_blank" class="resource-item">
+            <div class="resource-type">FIN 702 / ENT 501</div>
+            <h4>Venture Deals — Brad Feld & Jason Mendelson</h4>
+            <p>The startup funding bible. Everything you need to know about VC term sheets, cap tables, and fundraising strategy.</p>
+            <div class="resource-access archive">📥 Free — Internet Archive</div>
+          </a>
+          <a href="https://archive.org/details/hardthingaboutha0000horo" target="_blank" class="resource-item">
+            <div class="resource-type">FIN 702</div>
+            <h4>The Hard Thing About Hard Things — Ben Horowitz</h4>
+            <p>Essential reading on startup leadership and the reality of building a company from a16z co-founder Ben Horowitz.</p>
+            <div class="resource-access archive">📥 Free — Internet Archive</div>
+          </a>
         </div>
+      </div>
 
-        <div class="resource-category">
-          <h3>🚀 Entrepreneurship</h3>
-          <div class="resource-list">
-            <div class="resource-item">
-              <div class="resource-type">ENT 402</div>
-              <h4>The Lean Startup — Eric Ries</h4>
-              <p>Build-Measure-Learn. The methodology behind how modern startups iterate.</p>
-            </div>
-            <div class="resource-item">
-              <div class="resource-type">ENT 402</div>
-              <h4>Zero to One — Peter Thiel</h4>
-              <p>Thiel's framework for building monopolies and creating new markets.</p>
-            </div>
-            <div class="resource-item">
-              <div class="resource-type">MKT 502</div>
-              <h4>Hacking Growth — Sean Ellis & Morgan Brown</h4>
-              <p>The growth hacking playbook used at Dropbox, LogMeIn, and HubSpot.</p>
-            </div>
+      <!-- Strategy -->
+      <div class="resource-category">
+        <h3>♟️ Strategy</h3>
+        <div class="resource-list">
+          <a href="https://archive.org/details/competitivestrat00port" target="_blank" class="resource-item">
+            <div class="resource-type">STR 301</div>
+            <h4>Competitive Strategy — Michael Porter</h4>
+            <p>The foundational text on business strategy. Five Forces, generic strategies, value chain analysis. Used every week of STR 301.</p>
+            <div class="resource-access archive">📥 Free — Internet Archive</div>
+          </a>
+          <div class="resource-item">
+            <div class="resource-type">STR 301</div>
+            <h4>Good Strategy Bad Strategy — Richard Rumelt</h4>
+            <p>The clearest modern framework for what strategy actually is (and isn't). Kernel of good strategy: diagnosis, guiding policy, coherent actions.</p>
+            <div class="resource-access buy">📚 Buy or borrow from your library</div>
           </div>
+          <a href="https://archive.org/details/platformrevoluti0000park" target="_blank" class="resource-item">
+            <div class="resource-type">PM 801</div>
+            <h4>Platform Revolution — Parker, Van Alstyne & Choudary</h4>
+            <p>The definitive guide to platform business models and network effects. Directly applicable to Okta's ecosystem strategy.</p>
+            <div class="resource-access archive">📥 Free — Internet Archive</div>
+          </a>
         </div>
+      </div>
 
-        <div class="resource-category">
-          <h3>👤 Leadership</h3>
-          <div class="resource-list">
-            <div class="resource-item">
-              <div class="resource-type">LEAD 701</div>
-              <h4>The First 90 Days — Michael Watkins</h4>
-              <p>Essential for your exec transition. How to accelerate success in a new leadership role.</p>
-            </div>
-            <div class="resource-item">
-              <div class="resource-type">LEAD 701</div>
-              <h4>High Output Management — Andy Grove</h4>
-              <p>Intel CEO's timeless framework for managing organizations. Required reading for every engineering-to-exec transition.</p>
-            </div>
-            <div class="resource-item">
-              <div class="resource-type">PM 602</div>
-              <h4>Inspired — Marty Cagan</h4>
-              <p>The product management bible for tech companies. How great PMs work.</p>
-            </div>
+      <!-- Marketing -->
+      <div class="resource-category">
+        <h3>📈 Marketing</h3>
+        <div class="resource-list">
+          <a href="https://archive.org/details/isbn_9780132103046" target="_blank" class="resource-item">
+            <div class="resource-type">MKT 202</div>
+            <h4>Marketing Management — Kotler & Keller (14th Ed.)</h4>
+            <p>The marketing bible. STP, brand equity, B2B marketing, digital channels, pricing strategy.</p>
+            <div class="resource-access archive">📥 Free — Internet Archive</div>
+          </a>
+          <a href="https://archive.org/details/hackinggrowthhow0000elli" target="_blank" class="resource-item">
+            <div class="resource-type">MKT 502</div>
+            <h4>Hacking Growth — Sean Ellis & Morgan Brown</h4>
+            <p>The growth hacking playbook used at Dropbox, LogMeIn, and HubSpot. PLG, viral loops, north star metrics.</p>
+            <div class="resource-access archive">📥 Free — Internet Archive</div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Entrepreneurship -->
+      <div class="resource-category">
+        <h3>🚀 Entrepreneurship</h3>
+        <div class="resource-list">
+          <a href="https://archive.org/details/leanstartuphowto0000ries" target="_blank" class="resource-item">
+            <div class="resource-type">ENT 402</div>
+            <h4>The Lean Startup — Eric Ries</h4>
+            <p>Build-Measure-Learn. The methodology behind how modern startups iterate toward product-market fit.</p>
+            <div class="resource-access archive">📥 Free — Internet Archive</div>
+          </a>
+          <a href="https://archive.org/details/zerotoonenoteson0000thie" target="_blank" class="resource-item">
+            <div class="resource-type">ENT 402</div>
+            <h4>Zero to One — Peter Thiel</h4>
+            <p>Thiel's framework for building monopolies and creating new markets. Essential founder mindset reading.</p>
+            <div class="resource-access archive">📥 Free — Internet Archive</div>
+          </a>
+          <a href="https://archive.org/details/venturedealsbesm0000feld_f5r7" target="_blank" class="resource-item">
+            <div class="resource-type">ENT 501</div>
+            <h4>Venture Deals — Brad Feld</h4>
+            <p>The definitive guide to understanding VC term sheets, cap tables, and the fundraising process.</p>
+            <div class="resource-access archive">📥 Free — Internet Archive</div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Organizational Behavior -->
+      <div class="resource-category">
+        <h3>🧠 Leadership & Organizational Behavior</h3>
+        <div class="resource-list">
+          <a href="https://archive.org/details/organizational-behavior-global-edition-stephen-robbins-timothy-judge-2024" target="_blank" class="resource-item">
+            <div class="resource-type">OB 103</div>
+            <h4>Organizational Behavior — Robbins & Judge (2024 Global Ed.)</h4>
+            <p>The standard OB textbook. Individual behavior, group dynamics, leadership theories, organizational culture.</p>
+            <div class="resource-access archive">📥 Free — Internet Archive</div>
+          </a>
+          <a href="https://archive.org/details/first90daysprove0000watk" target="_blank" class="resource-item">
+            <div class="resource-type">LEAD 701</div>
+            <h4>The First 90 Days — Michael Watkins</h4>
+            <p>Essential for your exec transition. Proven strategies to accelerate success in a new leadership role. Read this alongside LEAD 701.</p>
+            <div class="resource-access archive">📥 Free — Internet Archive</div>
+          </a>
+          <a href="https://archive.org/details/isbn_394532341" target="_blank" class="resource-item">
+            <div class="resource-type">LEAD 701</div>
+            <h4>High Output Management — Andy Grove</h4>
+            <p>Intel CEO's timeless management framework. Required reading for every engineering-to-exec transition. One of the most practical leadership books ever written.</p>
+            <div class="resource-access archive">📥 Free — Internet Archive</div>
+          </a>
+          <a href="https://archive.org/details/isbn_9780981690407" target="_blank" class="resource-item">
+            <div class="resource-type">PM 602</div>
+            <h4>Inspired — Marty Cagan</h4>
+            <p>The product management bible for tech companies. How the best product teams at Apple, Netflix, Google actually work.</p>
+            <div class="resource-access archive">📥 Free — Internet Archive</div>
+          </a>
+          <a href="https://archive.org/details/fivedysfunctions00lenc" target="_blank" class="resource-item">
+            <div class="resource-type">LEAD 701</div>
+            <h4>The Five Dysfunctions of a Team — Patrick Lencioni</h4>
+            <p>Essential team leadership framework. Absence of trust, fear of conflict, lack of commitment, avoidance of accountability, inattention to results.</p>
+            <div class="resource-access archive">📥 Free — Internet Archive</div>
+          </a>
+          <div class="resource-item">
+            <div class="resource-type">PM 602</div>
+            <h4>Continuous Discovery Habits — Teresa Torres</h4>
+            <p>Modern product discovery methodology. Opportunity solution trees, continuous customer interviews, assumption testing.</p>
+            <div class="resource-access buy">📚 Buy or borrow from your library</div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Cases Tab -->
-    <div class="tab-content" data-tab="cases" data-group="resources">
-      <div style="display:grid; gap:24px;">
-        <div class="resource-category">
-          <h3>🏢 Technology & SaaS Cases (Tailored to Your Background)</h3>
-          <div class="resource-list">
-            <div class="resource-item">
-              <div class="resource-type">ACCT 101 · Finance</div>
-              <h4>Okta Inc. — Annual Report Analysis</h4>
-              <p>Your primary live case. Use Okta's real 10-K throughout ACCT 101 to understand SaaS-specific accounting: deferred revenue, stock-based comp, RPO.</p>
-            </div>
-            <div class="resource-item">
-              <div class="resource-type">TEC 401 · Strategy</div>
-              <h4>Okta's Platform Strategy — From IAM to Identity Cloud</h4>
-              <p>How Okta evolved from single-product to platform. Analyze network effects, ecosystem strategy, and the Auth0 acquisition.</p>
-            </div>
-            <div class="resource-item">
-              <div class="resource-type">STR 301 · Strategy</div>
-              <h4>Apple — Platform & Ecosystem Strategy</h4>
-              <p>HBS Case. The gold standard for platform strategy and ecosystem control. Apply to understand what Okta could emulate.</p>
-            </div>
-            <div class="resource-item">
-              <div class="resource-type">OB 103 · Leadership</div>
-              <h4>Satya Nadella — Microsoft's Cultural Transformation</h4>
-              <p>How Nadella transformed Microsoft from a "know-it-all" to "learn-it-all" culture. Directly applicable to your leadership development path.</p>
-            </div>
-            <div class="resource-item">
-              <div class="resource-type">FIN 201 · Finance</div>
-              <h4>Uber's Pre-IPO Valuation — HBS Case</h4>
-              <p>Walk through the valuation of a high-growth, pre-profit tech company. Core skill for evaluating your own startup.</p>
-            </div>
-            <div class="resource-item">
-              <div class="resource-type">ETH 303 · Ethics</div>
-              <h4>Theranos — The Cost of Fraud in Tech</h4>
-              <p>What happens when a tech founder's narrative disconnects from reality. Critical case for founders on ethics, governance, and board dynamics.</p>
-            </div>
+      <!-- Technology & Operations -->
+      <div class="resource-category">
+        <h3>💻 Technology & Operations</h3>
+        <div class="resource-list">
+          <div class="resource-item">
+            <div class="resource-type">TEC 401</div>
+            <h4>The Technology Fallacy — Kane, Phillips, Copulsky & Andrus</h4>
+            <p>Digital transformation is not about technology — it's about strategy and culture. MIT Sloan research-backed framework.</p>
+            <div class="resource-access buy">📚 Buy or borrow from your library</div>
+          </div>
+          <div class="resource-item">
+            <div class="resource-type">OPS 203</div>
+            <h4>Operations Management — Heizer, Render & Munson</h4>
+            <p>Core operations textbook. Process analysis, capacity planning, supply chain, Lean/Six Sigma, quality management.</p>
+            <div class="resource-access buy">📚 Buy or borrow from your library</div>
+          </div>
+          <div class="resource-item">
+            <div class="resource-type">ECON 302</div>
+            <h4>Managerial Economics — Keat, Young & Erfle</h4>
+            <p>Microeconomic principles applied to business. Pricing, elasticity, market structures, game theory, incentive design.</p>
+            <div class="resource-access buy">📚 Buy or borrow from your library</div>
           </div>
         </div>
       </div>
+
     </div>
 
-    <!-- Online Courses -->
+    <!-- ===================== ONLINE COURSES TAB ===================== -->
     <div class="tab-content" data-tab="online" data-group="resources">
-      <div style="display:grid; gap:24px;">
-        <div class="resource-category">
-          <h3>💻 Free / Low-Cost Online Supplements</h3>
-          <div class="resource-list">
-            <div class="resource-item">
-              <div class="resource-type">Accounting</div>
-              <h4>MIT 15.515 — Financial & Managerial Accounting</h4>
-              <p>Free on MIT OpenCourseWare. Excellent lecture notes and exams that perfectly supplement ACCT 101.</p>
-            </div>
-            <div class="resource-item">
-              <div class="resource-type">Statistics</div>
-              <h4>Coursera — Business Statistics (Duke University)</h4>
-              <p>Free to audit. Pairs perfectly with STAT 102 and builds on your data engineering background.</p>
-            </div>
-            <div class="resource-item">
-              <div class="resource-type">Finance</div>
-              <h4>Damodaran Online — NYU Valuation Course</h4>
-              <p>Aswath Damodaran's free valuation course is the best free resource on the internet for corporate finance and DCF modeling.</p>
-            </div>
-            <div class="resource-item">
-              <div class="resource-type">Entrepreneurship</div>
-              <h4>Y Combinator Startup School</h4>
-              <p>Free. Essential. Paul Graham, Michael Seibel, and YC partners teach you how to build and fund a startup. Do this alongside ENT 402.</p>
-            </div>
-            <div class="resource-item">
-              <div class="resource-type">Growth</div>
-              <h4>Reforge — Growth Series</h4>
-              <p>Paid ($1,500/yr but high ROI). The best growth marketing curriculum online. Do this alongside MKT 502 in Year 2.</p>
-            </div>
-            <div class="resource-item">
-              <div class="resource-type">Strategy</div>
-              <h4>McKinsey Strategy Insights (Free)</h4>
-              <p>McKinsey publishes detailed strategy articles for free. Follow McKinsey.com for ongoing strategy education throughout the program.</p>
-            </div>
-          </div>
+      <div class="resource-category">
+        <h3>💻 Free Online Courses & Course Materials</h3>
+        <div class="resource-list">
+          <a href="https://ocw.mit.edu/courses/15-515-financial-accounting-fall-2003/" target="_blank" class="resource-item">
+            <div class="resource-type">Accounting · ACCT 101</div>
+            <h4>MIT OCW — Financial Accounting (15.515)</h4>
+            <p>Complete MBA-level accounting course. Lecture notes, assignments, problem sets. Pairs perfectly with ACCT 101.</p>
+            <div class="resource-access free">✓ Free — MIT OpenCourseWare</div>
+          </a>
+          <a href="https://pages.stern.nyu.edu/~adamodar/New_Home_Page/webcastvalonline.htm" target="_blank" class="resource-item">
+            <div class="resource-type">Finance · FIN 201</div>
+            <h4>Damodaran — Valuation Online Class (NYU Stern)</h4>
+            <p>25 short webcasts by the world's best valuation professor. Slides, notes, and post-class tests included. Best free DCF resource on the internet.</p>
+            <div class="resource-access free">✓ Free — NYU Stern</div>
+          </a>
+          <a href="https://www.youtube.com/c/AswathDamodaranonValuation/playlists" target="_blank" class="resource-item">
+            <div class="resource-type">Finance · FIN 201</div>
+            <h4>Damodaran — YouTube Channel (All Courses)</h4>
+            <p>Full MBA valuation, corporate finance, and investment philosophy courses on YouTube. Hundreds of hours, completely free.</p>
+            <div class="resource-access free">✓ Free — YouTube</div>
+          </a>
+          <a href="https://www.startupschool.org/curriculum" target="_blank" class="resource-item">
+            <div class="resource-type">Entrepreneurship · ENT 402</div>
+            <h4>Y Combinator Startup School — Full Curriculum</h4>
+            <p>Free 7-week online program by YC. Paul Graham, Michael Seibel, and YC partners. How to build and fund a startup. Run alongside ENT 402.</p>
+            <div class="resource-access free">✓ Free — Y Combinator</div>
+          </a>
+          <a href="https://www.startupschool.org/aspiring-founders" target="_blank" class="resource-item">
+            <div class="resource-type">Entrepreneurship · ENT 402</div>
+            <h4>YC Startup School — Aspiring Founders Track</h4>
+            <p>Specifically designed for people like you — still employed, exploring a startup idea. Start here before ENT 402 begins.</p>
+            <div class="resource-access free">✓ Free — Y Combinator</div>
+          </a>
+          <a href="https://mru.org/" target="_blank" class="resource-item">
+            <div class="resource-type">Economics · ECON 302</div>
+            <h4>Marginal Revolution University (MRU)</h4>
+            <p>Free economics courses by Tyler Cowen and Alex Tabarrok (George Mason). Micro, macro, development economics — all free, well-produced video lessons.</p>
+            <div class="resource-access free">✓ Free — MRU</div>
+          </a>
+          <a href="https://corporatefinanceinstitute.com/" target="_blank" class="resource-item">
+            <div class="resource-type">Finance / Modeling</div>
+            <h4>Corporate Finance Institute (CFI)</h4>
+            <p>Excellent free reference articles on every finance topic. Financial modeling guides, ratio formulas, DCF templates. Bookmark for the entire program.</p>
+            <div class="resource-access free">✓ Free (articles) — CFI</div>
+          </a>
+          <a href="https://review.firstround.com/" target="_blank" class="resource-item">
+            <div class="resource-type">Startups / Leadership</div>
+            <h4>First Round Review</h4>
+            <p>Deep, practical articles from First Round Capital on product, hiring, leadership, and building companies. Exceptional quality — read one article per week.</p>
+            <div class="resource-access free">✓ Free — First Round Capital</div>
+          </a>
+          <a href="https://www.reforge.com/" target="_blank" class="resource-item">
+            <div class="resource-type">Growth · MKT 502</div>
+            <h4>Reforge — Growth Series</h4>
+            <p>The best growth marketing curriculum online. Run alongside MKT 502 in Year 2. High ROI if you're serious about PLG and growth strategy.</p>
+            <div class="resource-access paid">💳 Paid — ~$1,500/yr</div>
+          </a>
         </div>
       </div>
     </div>
 
-    <!-- Podcasts & Reading -->
+    <!-- ===================== PODCASTS & READING TAB ===================== -->
     <div class="tab-content" data-tab="media" data-group="resources">
-      <div style="display:grid; gap:24px;">
-        <div class="resource-category">
-          <h3>🎙️ Essential Podcasts</h3>
-          <div class="resource-list">
-            <div class="resource-item">
-              <div class="resource-type">Strategy / Tech</div>
-              <h4>Acquired</h4>
-              <p>Deep dives into the history and strategy of iconic companies (Nvidia, Apple, Berkshire, etc.). One of the best business education resources available. Listen alongside STR 301 and TEC 401.</p>
-            </div>
-            <div class="resource-item">
-              <div class="resource-type">Entrepreneurship</div>
-              <h4>How I Built This (NPR)</h4>
-              <p>Founders tell their stories. Excellent for ENT 402. Listen to episodes featuring SaaS founders.</p>
-            </div>
-            <div class="resource-item">
-              <div class="resource-type">Product / Growth</div>
-              <h4>Lenny's Podcast</h4>
-              <p>The best product and growth podcast. Essential listening for PM 602 and MKT 502. Practical, tactical, and high-signal.</p>
-            </div>
-            <div class="resource-item">
-              <div class="resource-type">Venture / Startups</div>
-              <h4>20VC — Harry Stebbings</h4>
-              <p>Conversations with top VCs and founders. Gives you the investor mental model you'll need for FIN 702.</p>
-            </div>
-            <div class="resource-item">
-              <div class="resource-type">Finance</div>
-              <h4>Planet Money (NPR)</h4>
-              <p>Makes economics and finance accessible. Great supplement for ECON 302 and FIN 201.</p>
-            </div>
-          </div>
-        </div>
 
-        <div class="resource-category">
-          <h3>📰 Must-Read Publications</h3>
-          <div class="resource-list">
-            <div class="resource-item">
-              <div class="resource-type">Daily Reading</div>
-              <h4>Stratechery — Ben Thompson</h4>
-              <p>The best tech strategy analysis online. Ben Thompson's mental models for platform strategy, bundling, and the tech industry are directly applicable to TEC 401 and STR 301.</p>
-            </div>
-            <div class="resource-item">
-              <div class="resource-type">Weekly</div>
-              <h4>Harvard Business Review</h4>
-              <p>The core academic/practitioner publication. Read one article per week throughout the program — it covers every subject you'll study.</p>
-            </div>
-            <div class="resource-item">
-              <div class="resource-type">Weekly</div>
-              <h4>Lenny's Newsletter</h4>
-              <p>Best newsletter for product and growth. Every issue is a masterclass. Subscribe for the duration of the program.</p>
-            </div>
-            <div class="resource-item">
-              <div class="resource-type">Daily</div>
-              <h4>The Wall Street Journal — Markets</h4>
-              <p>Build the habit of reading financial news daily. Relevant to ACCT 101, FIN 201, and STR 301. Trains business judgment over time.</p>
-            </div>
-          </div>
+      <div class="resource-category">
+        <h3>🎙️ Essential Podcasts (All Free)</h3>
+        <div class="resource-list">
+          <a href="https://www.acquired.fm/" target="_blank" class="resource-item">
+            <div class="resource-type">Strategy / Tech · STR 301 / TEC 401</div>
+            <h4>Acquired Podcast</h4>
+            <p>Multi-hour deep dives into iconic companies — Nvidia, Apple, Berkshire, Salesforce. One of the best business education resources available. Listen alongside STR 301 and TEC 401.</p>
+            <div class="resource-access free">✓ Free</div>
+          </a>
+          <a href="https://www.npr.org/series/490248027/how-i-built-this" target="_blank" class="resource-item">
+            <div class="resource-type">Entrepreneurship · ENT 402</div>
+            <h4>How I Built This — NPR</h4>
+            <p>Founders tell their origin stories. Excellent for ENT 402. Focus on SaaS and B2B founders. Each episode is a masterclass in founder psychology.</p>
+            <div class="resource-access free">✓ Free — NPR</div>
+          </a>
+          <a href="https://www.lennyspodcast.com/" target="_blank" class="resource-item">
+            <div class="resource-type">Product / Growth · PM 602 / MKT 502</div>
+            <h4>Lenny's Podcast</h4>
+            <p>The best product and growth podcast. Tactical, high-signal conversations with top PMs and growth leaders. Essential for PM 602 and MKT 502.</p>
+            <div class="resource-access free">✓ Free</div>
+          </a>
+          <a href="https://www.thetwentyminutevc.com/" target="_blank" class="resource-item">
+            <div class="resource-type">Venture / Startups · FIN 702</div>
+            <h4>20VC — Harry Stebbings</h4>
+            <p>Conversations with top VCs and founders. Gives you the investor mental model you'll need for FIN 702. Listen to episodes with a16z, Sequoia, Benchmark partners.</p>
+            <div class="resource-access free">✓ Free</div>
+          </a>
+          <a href="https://www.npr.org/sections/money/" target="_blank" class="resource-item">
+            <div class="resource-type">Economics / Finance · ECON 302 / FIN 201</div>
+            <h4>Planet Money — NPR</h4>
+            <p>Makes economics and finance accessible and entertaining. Great supplement for ECON 302 and FIN 201. Listen to one episode per week throughout Year 1.</p>
+            <div class="resource-access free">✓ Free — NPR</div>
+          </a>
         </div>
       </div>
-    </div>
 
+      <div class="resource-category">
+        <h3>📰 Must-Read Publications</h3>
+        <div class="resource-list">
+          <a href="https://stratechery.com/" target="_blank" class="resource-item">
+            <div class="resource-type">Daily · STR 301 / TEC 401</div>
+            <h4>Stratechery — Ben Thompson</h4>
+            <p>The best tech strategy analysis online. Ben Thompson's mental models for platform strategy, bundling, and the tech industry are directly applicable to TEC 401 and STR 301. Free daily articles, paid weekly essays.</p>
+            <div class="resource-access free">✓ Free (daily) / Paid (weekly)</div>
+          </a>
+          <a href="https://www.mckinsey.com/insights" target="_blank" class="resource-item">
+            <div class="resource-type">Weekly · STR 301 / LEAD 701</div>
+            <h4>McKinsey Insights</h4>
+            <p>Free strategy and leadership articles from McKinsey. Read one article per week alongside STR 301 and LEAD 701. Exposes you to consultant-level strategic thinking.</p>
+            <div class="resource-access free">✓ Free — McKinsey</div>
+          </a>
+          <a href="https://www.lennysnewsletter.com/" target="_blank" class="resource-item">
+            <div class="resource-type">Weekly · PM 602 / MKT 502</div>
+            <h4>Lenny's Newsletter</h4>
+            <p>Best newsletter for product and growth strategy. Every issue is a masterclass. Subscribe from Day 1 — the backlog alone is worth months of reading.</p>
+            <div class="resource-access free">✓ Free tier / Paid full access</div>
+          </a>
+          <a href="https://andrewchen.com/" target="_blank" class="resource-item">
+            <div class="resource-type">Growth · MKT 502</div>
+            <h4>Andrew Chen's Blog</h4>
+            <p>a16z General Partner's deep essays on growth, network effects, and consumer tech. Essential reading for MKT 502 and PM 801 (platform strategy).</p>
+            <div class="resource-access free">✓ Free</div>
+          </a>
+          <a href="https://review.firstround.com/" target="_blank" class="resource-item">
+            <div class="resource-type">Startups / Leadership</div>
+            <h4>First Round Review</h4>
+            <p>Long-form practitioner articles on building companies. Exceptional depth on hiring, product, culture, and leadership. One of the few startup resources that matches MBA-level rigor.</p>
+            <div class="resource-access free">✓ Free — First Round Capital</div>
+          </a>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
