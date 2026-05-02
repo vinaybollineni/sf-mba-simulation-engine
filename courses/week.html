@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Week — Stanford MBA Simulation</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">
+      <div class="nav-logo-icon">SF</div>
+      <div>
+        <span class="logo-text">MBA Simulation</span>
+        <span class="logo-sub">Stanford-Style Program</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../curriculum.html">Curriculum</a></li>
+      <li><a href="../dashboard.html">Dashboard</a></li>
+      <li><a href="../assignments.html">Assignments</a></li>
+      <li><a href="../resources.html">Resources</a></li>
+    </ul>
+    <div class="nav-hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- Page header — filled by JS -->
+<div class="page-header" id="week-header">
+  <div class="container">
+    <div class="breadcrumb" id="breadcrumb">
+      <a href="../index.html">Home</a> /
+      <a href="../curriculum.html">Curriculum</a> /
+      <span id="breadcrumb-course">Loading…</span> /
+      <span id="breadcrumb-week">Week</span>
+    </div>
+    <h1 id="header-title">Loading…</h1>
+    <p id="header-meta" style="opacity:0.85;"></p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div id="week-content" style="display:grid; grid-template-columns:1fr 300px; gap:32px; align-items:start;">
+      <div style="text-align:center; padding:60px 0; color:var(--text-muted);">
+        <div style="font-size:32px; margin-bottom:12px;">⏳</div>
+        <div>Loading week content…</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-bottom">
+      <div>© 2026 MBA Simulation Engine · <span>Vinay Bollineni</span> · Class of 2028</div>
+      <div><a href="../curriculum.html" style="color:rgba(255,255,255,0.6); text-decoration:none;">← All Courses</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/app.js"></script>
+<script>
+(function () {
+  const params = new URLSearchParams(window.location.search);
+  const courseParam = (params.get('course') || '').toLowerCase();
+  const weekNum = parseInt(params.get('week') || '1', 10);
+
+  if (!courseParam) {
+    document.getElementById('header-title').textContent = 'Page not found';
+    return;
+  }
+
+  fetch('../data/program.json')
+    .then(r => r.json())
+    .then(data => {
+      // Flatten all courses
+      const allCourses = [];
+      [data.year1, data.year2].forEach(yr => {
+        yr.quarters.forEach(q => {
+          q.courses.forEach(c => allCourses.push({ ...c, quarter: q }));
+        });
+      });
+
+      // Find by normalised code: "fin201" matches "FIN 201"
+      const course = allCourses.find(c =>
+        c.code.replace(/\s+/g, '').toLowerCase() === courseParam
+      );
+
+      if (!course) {
+        document.getElementById('header-title').textContent = `Course "${courseParam}" not found`;
+        return;
+      }
+
+      const totalWeeks = course.weeks;
+      const weekIdx = Math.max(1, Math.min(weekNum, totalWeeks));
+      const topicLine = (course.weeklyTopics || [])[weekIdx - 1] || `Week ${weekIdx}`;
+
+      // Parse "Week N: Topic Title" → topicTitle
+      const colonIdx = topicLine.indexOf(':');
+      const topicTitle = colonIdx >= 0 ? topicLine.slice(colonIdx + 1).trim() : topicLine;
+      const weekLabel = `Week ${weekIdx}`;
+
+      const courseCode = course.code;
+      const courseSlug = courseCode.replace(/\s+/g, '').toLowerCase();
+
+      // Update page title
+      document.title = `${courseCode} · ${weekLabel} | Stanford MBA Simulation`;
+
+      // Breadcrumb
+      document.getElementById('breadcrumb-course').innerHTML =
+        `<a href="${courseSlug}.html">${courseCode}</a>`;
+      document.getElementById('breadcrumb-week').textContent = weekLabel;
+
+      // Header
+      document.getElementById('header-title').textContent = `${weekLabel} — ${topicTitle}`;
+      document.getElementById('header-meta').textContent =
+        `${courseCode} · ${course.title} · ${course.quarter.title} · ${course.quarter.months}`;
+
+      // Prev / Next
+      const prevWeek = weekIdx > 1 ? weekIdx - 1 : null;
+      const nextWeek = weekIdx < totalWeeks ? weekIdx + 1 : null;
+      const prevHtml = prevWeek
+        ? `<a href="week.html?course=${courseSlug}&week=${prevWeek}" class="btn btn-secondary" style="font-size:13px;">← Week ${prevWeek}</a>` : '';
+      const nextHtml = nextWeek
+        ? `<a href="week.html?course=${courseSlug}&week=${nextWeek}" class="btn btn-primary" style="font-size:13px;">Week ${nextWeek} →</a>` : '';
+
+      // Week progress dots
+      const dots = Array.from({ length: totalWeeks }, (_, i) => {
+        const w = i + 1;
+        const isCurrent = w === weekIdx;
+        const bg = isCurrent ? 'var(--stanford-red)' : (w < weekIdx ? '#4CAF50' : 'var(--border)');
+        const href = `week.html?course=${courseSlug}&week=${w}`;
+        return `<a href="${href}" title="Week ${w}" style="width:28px; height:28px; border-radius:50%;
+          background:${bg}; display:inline-flex; align-items:center; justify-content:center;
+          color:${isCurrent || w < weekIdx ? 'white' : 'var(--text-muted)'}; font-size:11px; font-weight:700;
+          text-decoration:none;">${w}</a>`;
+      }).join('');
+
+      // Textbook
+      const tbMain = course.textbook || '';
+      const tbBridge = course.textbook_free_bridge || '';
+
+      // Cases list
+      const casesHtml = (course.cases || []).map(c =>
+        `<div style="font-size:13px; color:var(--text-secondary); padding:6px 0; border-bottom:1px solid var(--border); line-height:1.5;">
+          <span style="color:var(--stanford-red); font-weight:600;">▸</span> ${c}
+        </div>`
+      ).join('');
+
+      // Resources list
+      const resHtml = (course.resources || []).map(r =>
+        `<div style="font-size:13px; color:var(--text-secondary); padding:6px 0; border-bottom:1px solid var(--border);">
+          <span style="color:#1565C0; font-weight:600;">→</span> ${r}
+        </div>`
+      ).join('');
+
+      // Objectives list
+      const objHtml = (course.objectives || []).map(o =>
+        `<li style="margin-bottom:8px; color:var(--text-secondary); font-size:14px; line-height:1.6;">${o}</li>`
+      ).join('');
+
+      // All weekly topics for this course (mini-syllabus)
+      const syllabusHtml = (course.weeklyTopics || []).map((t, i) => {
+        const wNum = i + 1;
+        const isCur = wNum === weekIdx;
+        const [lbl, ...rest] = t.split(':');
+        const tTitle = rest.join(':').trim() || t;
+        return `<div style="display:flex; gap:12px; align-items:flex-start; padding:8px 0;
+          border-bottom:1px solid var(--border); ${isCur ? 'background:rgba(140,21,21,0.04); margin:0 -12px; padding:8px 12px;' : ''}">
+          <div style="min-width:24px; height:24px; border-radius:50%; flex-shrink:0;
+            background:${isCur ? 'var(--stanford-red)' : 'var(--bg-secondary)'};
+            color:${isCur ? 'white' : 'var(--text-muted)'}; display:flex; align-items:center;
+            justify-content:center; font-size:11px; font-weight:700;">${wNum}</div>
+          <a href="week.html?course=${courseSlug}&week=${wNum}"
+            style="font-size:13px; color:${isCur ? 'var(--stanford-red)' : 'var(--text-secondary)'};
+            font-weight:${isCur ? '700' : '400'}; text-decoration:none; line-height:1.5;">${tTitle}</a>
+        </div>`;
+      }).join('');
+
+      document.getElementById('week-content').innerHTML = `
+
+        <!-- MAIN COLUMN -->
+        <div>
+
+          <!-- This Week Focus -->
+          <div class="card mb-24">
+            <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px; flex-wrap:wrap;">
+              <span style="background:var(--stanford-red); color:white; font-size:11px; font-weight:700;
+                padding:4px 14px; border-radius:12px; text-transform:uppercase; letter-spacing:0.5px;">
+                Week ${weekIdx} of ${totalWeeks}
+              </span>
+              <span style="font-size:13px; color:var(--text-muted);">${course.quarter.months}</span>
+            </div>
+            <h2 style="font-size:22px; font-weight:800; color:var(--text-primary); margin-bottom:8px; line-height:1.3;">
+              ${topicTitle}
+            </h2>
+            <p style="font-size:14px; color:var(--text-secondary); line-height:1.7; margin:0;">
+              ${course.description}
+            </p>
+          </div>
+
+          <!-- Learning Objectives (course-level) -->
+          ${objHtml ? `
+          <div class="card mb-24">
+            <h2 style="font-size:15px; font-weight:700; margin-bottom:16px; color:var(--text-primary);">
+              Course Learning Objectives
+            </h2>
+            <ul style="list-style:none; padding:0; margin:0;">${objHtml}</ul>
+          </div>` : ''}
+
+          <!-- Study Guide placeholder -->
+          <div class="card mb-24">
+            <h2 style="font-size:15px; font-weight:700; margin-bottom:16px; color:var(--text-primary);">
+              This Week's Study Plan
+            </h2>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+              <div>
+                <div style="font-size:12px; font-weight:700; color:var(--stanford-red); text-transform:uppercase;
+                  letter-spacing:0.5px; margin-bottom:10px;">Study Steps</div>
+                <ol style="padding-left:18px; margin:0; font-size:13px; color:var(--text-secondary); line-height:2;">
+                  <li>Read assigned chapter(s) in textbook</li>
+                  <li>Review lecture notes / video summary</li>
+                  <li>Work through practice problems</li>
+                  <li>Complete the week's case study</li>
+                  <li>Write a 1-page reflection</li>
+                </ol>
+              </div>
+              <div>
+                <div style="font-size:12px; font-weight:700; color:var(--stanford-red); text-transform:uppercase;
+                  letter-spacing:0.5px; margin-bottom:10px;">This Week's Deliverable</div>
+                <div style="background:var(--bg-secondary); border-radius:8px; padding:14px; font-size:13px;
+                  color:var(--text-secondary); line-height:1.7;">
+                  Complete Problem Set ${weekIdx} and submit a brief reflection connecting
+                  <strong>${topicTitle}</strong> to your work at Okta or startup thinking.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Week Navigation -->
+          <div style="display:flex; justify-content:space-between; align-items:center; padding-top:24px;">
+            <div>${prevHtml}</div>
+            <a href="${courseSlug}.html" style="font-size:13px; color:var(--text-muted); text-decoration:none;">
+              ← Back to ${courseCode}
+            </a>
+            <div>${nextHtml}</div>
+          </div>
+
+        </div>
+
+        <!-- SIDEBAR -->
+        <div>
+
+          <!-- Week Progress -->
+          <div class="card mb-16">
+            <h3 style="font-size:14px; font-weight:700; margin-bottom:12px; color:var(--stanford-red);">
+              📅 Course Progress
+            </h3>
+            <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:12px;">
+              ${dots}
+            </div>
+            <div style="font-size:12px; color:var(--text-muted);">
+              Week ${weekIdx} of ${totalWeeks} · ${courseCode} · ${course.title}
+            </div>
+          </div>
+
+          <!-- Textbook -->
+          ${tbMain ? `
+          <div class="card mb-16">
+            <h3 style="font-size:14px; font-weight:700; margin-bottom:12px; color:var(--stanford-red);">📚 Textbook</h3>
+            <div style="font-size:13px; color:var(--text-secondary); line-height:1.6; margin-bottom:8px;">${tbMain}</div>
+            ${tbBridge ? `<div style="font-size:12px; color:var(--text-muted); margin-top:8px; padding-top:8px; border-top:1px solid var(--border);">Free bridge: ${tbBridge}</div>` : ''}
+          </div>` : ''}
+
+          <!-- Cases -->
+          ${casesHtml ? `
+          <div class="card mb-16">
+            <h3 style="font-size:14px; font-weight:700; margin-bottom:12px; color:var(--stanford-red);">📋 Cases</h3>
+            ${casesHtml}
+          </div>` : ''}
+
+          <!-- Resources -->
+          ${resHtml ? `
+          <div class="card mb-16">
+            <h3 style="font-size:14px; font-weight:700; margin-bottom:12px; color:var(--stanford-red);">🔗 Resources</h3>
+            ${resHtml}
+          </div>` : ''}
+
+          <!-- Course Syllabus mini -->
+          <div class="card mb-16">
+            <h3 style="font-size:14px; font-weight:700; margin-bottom:12px; color:var(--stanford-red);">
+              📖 Course Syllabus
+            </h3>
+            ${syllabusHtml}
+            <div style="margin-top:10px;">
+              <a href="${courseSlug}.html" style="font-size:12px; color:var(--stanford-red);">View full course →</a>
+            </div>
+          </div>
+
+        </div>
+      `;
+    })
+    .catch(err => {
+      document.getElementById('week-content').innerHTML =
+        `<div style="padding:40px; color:red;">Error loading data: ${err.message}</div>`;
+    });
+}());
+</script>
+</body>
+</html>
