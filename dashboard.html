@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard — Stanford MBA Simulation</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-logo-icon">SF</div>
+      <div>
+        <span class="logo-text">MBA Simulation</span>
+        <span class="logo-sub">Stanford-Style Program</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="curriculum.html">Curriculum</a></li>
+      <li><a href="dashboard.html" class="active">Dashboard</a></li>
+      <li><a href="assignments.html">Assignments</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
+    <div class="nav-hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Dashboard</div>
+    <h1>Weekly Dashboard</h1>
+    <p>ACCT 101 — Financial Accounting · Week 1 of 10 · Quarter 1</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <!-- Alert -->
+    <div class="alert alert-success">
+      <span style="font-size:18px;">🎉</span>
+      <div>
+        <strong>Welcome to Week 1!</strong> You're starting ACCT 101 — Financial Accounting & Analysis. This week covers the foundational accounting equation and double-entry bookkeeping. Estimated time: 12 hours.
+      </div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 320px; gap:32px; align-items:start;">
+
+      <!-- Main Content -->
+      <div>
+        <!-- Week Progress -->
+        <div class="week-card mb-24">
+          <div class="week-header">
+            <div style="display:flex; justify-content:space-between; align-items:start;">
+              <div>
+                <h3>Week 1: The Accounting Equation</h3>
+                <p>ACCT 101 · Financial Accounting & Analysis · May 4–10, 2026</p>
+              </div>
+              <div style="text-align:right;">
+                <div style="font-size:24px; font-weight:800; color:#FFD700;" id="week-progress">0/7 tasks</div>
+                <div style="font-size:11px; opacity:0.8;">this week</div>
+              </div>
+            </div>
+            <div style="margin-top:12px; height:6px; background:rgba(255,255,255,0.2); border-radius:3px;">
+              <div id="week-progress-bar" style="height:100%; background:#FFD700; border-radius:3px; width:0%; transition:width 0.5s;"></div>
+            </div>
+          </div>
+          <div class="week-body">
+            <div class="task-item">
+              <div class="task-check"></div>
+              <div class="task-text">
+                <strong>📖 Lecture: The Accounting Equation</strong>
+                <span>Read the lecture summary and key concepts · Est. 1.5 hrs</span>
+              </div>
+              <div class="task-hours">1.5 hrs</div>
+            </div>
+            <div class="task-item">
+              <div class="task-check"></div>
+              <div class="task-text">
+                <strong>📚 Reading: Horngren Ch. 1-2</strong>
+                <span>Financial Accounting, 5th Ed — Assets, Liabilities, Equity · Est. 2 hrs</span>
+              </div>
+              <div class="task-hours">2 hrs</div>
+            </div>
+            <div class="task-item">
+              <div class="task-check"></div>
+              <div class="task-text">
+                <strong>🎥 Video: Khan Academy — Accounting Basics</strong>
+                <span>3 videos, ~45 min total · Foundation refresher</span>
+              </div>
+              <div class="task-hours">0.75 hrs</div>
+            </div>
+            <div class="task-item">
+              <div class="task-check"></div>
+              <div class="task-text">
+                <strong>📝 Problem Set 1 — Accounting Equation Exercises</strong>
+                <span>10 problems: record transactions using the accounting equation · Due Fri May 8</span>
+              </div>
+              <div class="task-hours">2 hrs</div>
+            </div>
+            <div class="task-item">
+              <div class="task-check"></div>
+              <div class="task-text">
+                <strong>🏢 Case Prep: Intro to Okta's Balance Sheet</strong>
+                <span>Download Okta's latest 10-K from SEC.gov and find the balance sheet · Est. 1 hr</span>
+              </div>
+              <div class="task-hours">1 hr</div>
+            </div>
+            <div class="task-item">
+              <div class="task-check"></div>
+              <div class="task-text">
+                <strong>🔍 Case Analysis: Identify Assets, Liabilities & Equity in Okta's 10-K</strong>
+                <span>Annotate the balance sheet, categorize line items · Est. 1.5 hrs · Due Sun May 10</span>
+              </div>
+              <div class="task-hours">1.5 hrs</div>
+            </div>
+            <div class="task-item">
+              <div class="task-check"></div>
+              <div class="task-text">
+                <strong>✍️ Reflection Prompt</strong>
+                <span>How does understanding a balance sheet change how you'd evaluate a potential startup partner? Write 200–300 words · Est. 30 min</span>
+              </div>
+              <div class="task-hours">0.5 hrs</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- This Week's Lecture -->
+        <div class="card mb-24">
+          <h2 style="font-size:18px; font-weight:700; margin-bottom:4px;">📖 This Week's Lecture Summary</h2>
+          <p style="font-size:13px; color:var(--text-muted); margin-bottom:20px;">ACCT 101 · Week 1: The Accounting Equation & Double-Entry Bookkeeping</p>
+
+          <div style="background:#FFF8E1; border-left:4px solid #FFB300; padding:16px; border-radius:4px; margin-bottom:20px;">
+            <strong style="font-size:13px;">Professor Note:</strong>
+            <p style="font-size:13px; margin-top:4px;">As a data engineer, you already understand data models. Think of accounting as a <em>data model for a business</em>. Every transaction is an event that changes the state of the model. The accounting equation is the invariant that must always hold true — much like a database constraint.</p>
+          </div>
+
+          <h3 style="font-size:15px; font-weight:700; margin-bottom:12px; color:var(--stanford-red);">The Accounting Equation</h3>
+          <div style="background:var(--bg-secondary); border:2px solid var(--stanford-red); border-radius:8px; padding:20px; text-align:center; font-size:20px; font-weight:700; letter-spacing:1px; margin-bottom:20px;">
+            Assets = Liabilities + Equity
+          </div>
+
+          <p style="font-size:14px; margin-bottom:16px; line-height:1.7;">This equation is the foundation of all accounting. It must <strong>always balance</strong>. Every financial transaction affects at least two accounts (double-entry) and the equation always remains true.</p>
+
+          <h3 style="font-size:15px; font-weight:700; margin-bottom:12px; color:var(--stanford-red);">The Three Components</h3>
+
+          <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; margin-bottom:20px;">
+            <div style="background:#E8F5E9; border-radius:8px; padding:16px;">
+              <div style="font-weight:700; color:#2E7D32; margin-bottom:8px;">Assets</div>
+              <div style="font-size:13px; color:#555;">Resources owned by the company with future economic value.
+              <br><br>Examples: Cash, Accounts Receivable, PP&amp;E, Intangibles</div>
+            </div>
+            <div style="background:#FFF3E0; border-radius:8px; padding:16px;">
+              <div style="font-weight:700; color:#E65100; margin-bottom:8px;">Liabilities</div>
+              <div style="font-size:13px; color:#555;">Obligations owed to others — what the company must pay.
+              <br><br>Examples: Accounts Payable, Debt, Deferred Revenue</div>
+            </div>
+            <div style="background:#E3F2FD; border-radius:8px; padding:16px;">
+              <div style="font-weight:700; color:#1565C0; margin-bottom:8px;">Equity</div>
+              <div style="font-size:13px; color:#555;">Residual interest — what's left for shareholders after liabilities.
+              <br><br>Examples: Common Stock, Retained Earnings, APIC</div>
+            </div>
+          </div>
+
+          <h3 style="font-size:15px; font-weight:700; margin-bottom:12px; color:var(--stanford-red);">Double-Entry Bookkeeping</h3>
+          <p style="font-size:14px; margin-bottom:12px; line-height:1.7;">Every transaction affects at least two accounts. We use <strong>debits</strong> (left side) and <strong>credits</strong> (right side). The total debits must always equal total credits.</p>
+
+          <div style="background:var(--bg-secondary); border-radius:8px; padding:16px; font-family:monospace; font-size:13px;">
+            <div style="margin-bottom:8px; font-weight:700; font-family:var(--font-sans);">Example: Okta raises $100M in a VC round</div>
+            <div style="color:#2E7D32;">DEBIT: Cash (Asset)  +$100,000,000</div>
+            <div style="color:#1565C0;">CREDIT: Common Stock (Equity)  +$100,000,000</div>
+            <div style="margin-top:8px; font-style:italic; color:#888; font-family:var(--font-sans);">Equation check: Assets increased by $100M, Equity increased by $100M ✓</div>
+          </div>
+
+          <h3 style="font-size:15px; font-weight:700; margin:20px 0 12px; color:var(--stanford-red);">Key Takeaways for This Week</h3>
+          <ul style="font-size:14px; line-height:1.8; padding-left:20px; color:var(--text-secondary);">
+            <li>The accounting equation is immutable — it always balances</li>
+            <li>Every business event is recorded as a transaction affecting ≥2 accounts</li>
+            <li>Assets are what you own; liabilities are what you owe; equity is what's left</li>
+            <li>A balance sheet is a <em>snapshot</em> of the company's financial position at one point in time</li>
+            <li>Deferred revenue (common in SaaS like Okta) is a <em>liability</em> — you've been paid but haven't delivered the service yet</li>
+          </ul>
+
+          <div style="margin-top:20px; padding:16px; background:var(--bg-secondary); border-radius:8px;">
+            <strong style="font-size:13px; color:var(--stanford-red);">📌 Okta Connection:</strong>
+            <p style="font-size:13px; margin-top:4px; color:var(--text-secondary);">When you look at Okta's balance sheet, you'll notice a large "Deferred Revenue" line under liabilities. This is customers who have prepaid for subscriptions but haven't yet received the service. It's one of SaaS accounting's most important concepts — and it directly affects how investors value Okta's business.</p>
+          </div>
+        </div>
+
+        <!-- Problem Set -->
+        <div class="card">
+          <h2 style="font-size:18px; font-weight:700; margin-bottom:4px;">📝 Problem Set 1 — Practice Exercises</h2>
+          <p style="font-size:13px; color:var(--text-muted); margin-bottom:20px;">Record each transaction using the accounting equation. Show the impact on Assets, Liabilities, and Equity.</p>
+
+          <div style="display:flex; flex-direction:column; gap:16px;">
+            <div style="padding:16px; background:var(--bg-secondary); border-radius:8px; border-left:3px solid var(--stanford-red);">
+              <strong style="font-size:13px;">Q1.</strong>
+              <p style="font-size:13px; margin-top:4px;">A startup founder invests $50,000 of personal cash into the business. Record this transaction.</p>
+            </div>
+            <div style="padding:16px; background:var(--bg-secondary); border-radius:8px; border-left:3px solid var(--stanford-red);">
+              <strong style="font-size:13px;">Q2.</strong>
+              <p style="font-size:13px; margin-top:4px;">The company buys $10,000 of office equipment on credit (accounts payable). What is the impact on the accounting equation?</p>
+            </div>
+            <div style="padding:16px; background:var(--bg-secondary); border-radius:8px; border-left:3px solid var(--stanford-red);">
+              <strong style="font-size:13px;">Q3.</strong>
+              <p style="font-size:13px; margin-top:4px;">A SaaS company collects $120,000 in annual subscription payments upfront from customers. Nothing has been delivered yet. How does this appear on the balance sheet?</p>
+            </div>
+            <div style="padding:16px; background:var(--bg-secondary); border-radius:8px; border-left:3px solid var(--stanford-red);">
+              <strong style="font-size:13px;">Q4.</strong>
+              <p style="font-size:13px; margin-top:4px;">The company pays $5,000 in salary to employees. What is the accounting entry?</p>
+            </div>
+            <div style="padding:16px; background:var(--bg-secondary); border-radius:8px; border-left:3px solid var(--stanford-red);">
+              <strong style="font-size:13px;">Q5 (Challenge).</strong>
+              <p style="font-size:13px; margin-top:4px;">Okta raises $1B in a convertible note financing. At the time of issuance, before conversion, how does this appear on the balance sheet? What happens when it converts to equity?</p>
+            </div>
+          </div>
+
+          <div style="margin-top:20px; padding:14px 18px; background:#E8F5E9; border-radius:8px; display:flex; align-items:center; gap:10px;">
+            <span>💡</span>
+            <span style="font-size:13px; color:#2E7D32;"><strong>Tip:</strong> For each transaction, ask: What went up? What went down? Does Assets = Liabilities + Equity still hold?</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div>
+        <!-- Quick Stats -->
+        <div class="card mb-16">
+          <h3 style="font-size:14px; font-weight:700; margin-bottom:16px; color:var(--stanford-red);">📊 Program Stats</h3>
+          <div style="display:flex; flex-direction:column; gap:12px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; font-size:13px;">
+              <span style="color:var(--text-secondary);">Current Course</span>
+              <strong>ACCT 101</strong>
+            </div>
+            <div style="display:flex; justify-content:space-between; align-items:center; font-size:13px;">
+              <span style="color:var(--text-secondary);">Current Week</span>
+              <strong>Week 1 / 10</strong>
+            </div>
+            <div style="display:flex; justify-content:space-between; align-items:center; font-size:13px;">
+              <span style="color:var(--text-secondary);">Quarter</span>
+              <strong>Q1 · Year 1</strong>
+            </div>
+            <div style="display:flex; justify-content:space-between; align-items:center; font-size:13px;">
+              <span style="color:var(--text-secondary);">Courses Completed</span>
+              <strong>0 / 20</strong>
+            </div>
+            <div style="display:flex; justify-content:space-between; align-items:center; font-size:13px;">
+              <span style="color:var(--text-secondary);">Est. Hours This Week</span>
+              <strong style="color:var(--stanford-red);">~12 hrs</strong>
+            </div>
+          </div>
+          <div style="margin-top:16px;">
+            <div style="font-size:11px; color:var(--text-muted); margin-bottom:6px;">ACCT 101 Progress</div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-width="10" style="width:0%"></div>
+            </div>
+            <div style="font-size:11px; color:var(--text-muted); margin-top:4px;">Week 1 of 10</div>
+          </div>
+        </div>
+
+        <!-- This Week Schedule -->
+        <div class="card mb-16">
+          <h3 style="font-size:14px; font-weight:700; margin-bottom:16px; color:var(--stanford-red);">📅 Suggested Schedule</h3>
+          <div style="display:flex; flex-direction:column; gap:10px; font-size:13px;">
+            <div style="padding:10px; background:var(--bg-secondary); border-radius:6px;">
+              <strong>Monday Eve (~2 hrs)</strong>
+              <div style="color:var(--text-muted); margin-top:2px;">Lecture + Khan Academy videos</div>
+            </div>
+            <div style="padding:10px; background:var(--bg-secondary); border-radius:6px;">
+              <strong>Tuesday Eve (~2 hrs)</strong>
+              <div style="color:var(--text-muted); margin-top:2px;">Horngren Ch. 1-2 reading</div>
+            </div>
+            <div style="padding:10px; background:var(--bg-secondary); border-radius:6px;">
+              <strong>Thursday Eve (~2 hrs)</strong>
+              <div style="color:var(--text-muted); margin-top:2px;">Problem Set 1</div>
+            </div>
+            <div style="padding:10px; background:var(--bg-secondary); border-radius:6px;">
+              <strong>Saturday (~4 hrs)</strong>
+              <div style="color:var(--text-muted); margin-top:2px;">Okta 10-K case + analysis</div>
+            </div>
+            <div style="padding:10px; background:var(--bg-secondary); border-radius:6px;">
+              <strong>Sunday (~2 hrs)</strong>
+              <div style="color:var(--text-muted); margin-top:2px;">Reflection prompt + review</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Key Concepts -->
+        <div class="card mb-16">
+          <h3 style="font-size:14px; font-weight:700; margin-bottom:16px; color:var(--stanford-red);">🧠 Key Concepts This Week</h3>
+          <div style="display:flex; flex-wrap:wrap; gap:8px;">
+            <span style="padding:4px 10px; background:var(--bg-secondary); border-radius:12px; font-size:12px; font-weight:500;">Accounting Equation</span>
+            <span style="padding:4px 10px; background:var(--bg-secondary); border-radius:12px; font-size:12px; font-weight:500;">Double-Entry</span>
+            <span style="padding:4px 10px; background:var(--bg-secondary); border-radius:12px; font-size:12px; font-weight:500;">Balance Sheet</span>
+            <span style="padding:4px 10px; background:var(--bg-secondary); border-radius:12px; font-size:12px; font-weight:500;">Debits & Credits</span>
+            <span style="padding:4px 10px; background:var(--bg-secondary); border-radius:12px; font-size:12px; font-weight:500;">Deferred Revenue</span>
+            <span style="padding:4px 10px; background:var(--bg-secondary); border-radius:12px; font-size:12px; font-weight:500;">GAAP</span>
+          </div>
+        </div>
+
+        <!-- Upcoming -->
+        <div class="card">
+          <h3 style="font-size:14px; font-weight:700; margin-bottom:16px; color:var(--stanford-red);">⏭️ Coming Next</h3>
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <div style="font-size:13px; padding:10px; border:1px solid var(--border); border-radius:6px;">
+              <div style="font-weight:600;">Week 2</div>
+              <div style="color:var(--text-muted); font-size:12px; margin-top:2px;">Income Statement — Revenue Recognition & Expenses</div>
+            </div>
+            <div style="font-size:13px; padding:10px; border:1px solid var(--border); border-radius:6px;">
+              <div style="font-weight:600;">Week 3</div>
+              <div style="color:var(--text-muted); font-size:12px; margin-top:2px;">Balance Sheet Deep Dive</div>
+            </div>
+            <div style="font-size:13px; padding:10px; border:1px solid var(--border); border-radius:6px;">
+              <div style="font-weight:600;">Week 4</div>
+              <div style="color:var(--text-muted); font-size:12px; margin-top:2px;">Cash Flow Statement</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-bottom">
+      <div>© 2026 MBA Simulation Engine · <span>Vinay Bollineni</span> · Class of 2028</div>
+      <div><a href="curriculum.html" style="color:rgba(255,255,255,0.6); text-decoration:none;">← Curriculum</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

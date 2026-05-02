@@ -1,0 +1,676 @@
+{
+  "student": {
+    "name": "Vinay Bollineni",
+    "role": "Data Platform Engineering Manager",
+    "company": "Okta",
+    "background": "CS Undergrad + Master in Information Systems",
+    "goals": ["Senior Leadership (CTO/CEO)", "Start Own Business"],
+    "specializations": ["Entrepreneurship & Innovation", "Strategy & Consulting", "Marketing & Growth", "Technology & Product Management"],
+    "startDate": "2026-05-02",
+    "programName": "Stanford MBA Simulation — Personalized Track"
+  },
+  "year1": {
+    "title": "Year 1: Core Business Foundations",
+    "quarters": [
+      {
+        "id": "q1",
+        "title": "Quarter 1 — Financial & Analytical Foundations",
+        "months": "May – July 2026",
+        "courses": [
+          {
+            "id": "core-101",
+            "code": "ACCT 101",
+            "title": "Financial Accounting & Analysis",
+            "weeks": 10,
+            "status": "current",
+            "description": "Master the language of business. Understand financial statements, accounting principles, and how to read a company's financial health.",
+            "objectives": [
+              "Read and interpret income statements, balance sheets, and cash flow statements",
+              "Understand GAAP principles and double-entry accounting",
+              "Analyze financial ratios and business performance",
+              "Build basic financial models from scratch"
+            ],
+            "textbook": "Financial Accounting, 5th Ed. — Horngren, Sundem, Elliott",
+            "resources": ["HBS Case: Starbucks Financial Analysis", "WSJ Financial Statements Tutorial", "Khan Academy Accounting Series"],
+            "weeklyTopics": [
+              "Week 1: The Accounting Equation & Double-Entry Bookkeeping",
+              "Week 2: Income Statement — Revenue Recognition & Expenses",
+              "Week 3: Balance Sheet — Assets, Liabilities, Equity",
+              "Week 4: Cash Flow Statement — Operating, Investing, Financing",
+              "Week 5: Financial Ratios — Liquidity, Profitability, Leverage",
+              "Week 6: Working Capital Management",
+              "Week 7: Cost Accounting & Managerial Decisions",
+              "Week 8: Depreciation, Amortization & Asset Management",
+              "Week 9: HBS Case — Analyzing a Real Tech Company (Netflix)",
+              "Week 10: Final Project — Full Financial Analysis of Okta's 10-K"
+            ],
+            "assignments": [
+              "Weekly problem sets (10 total)",
+              "Mid-course: Build a 3-statement model for a startup",
+              "Final: Comprehensive financial analysis of Okta's annual report"
+            ]
+          },
+          {
+            "id": "core-102",
+            "code": "STAT 102",
+            "title": "Business Statistics & Data-Driven Decisions",
+            "weeks": 8,
+            "status": "upcoming",
+            "description": "Leverage your data engineering background to master statistical thinking for business decisions. Bridges your technical skills to business outcomes.",
+            "objectives": [
+              "Apply statistical inference to business problems",
+              "Design and analyze A/B tests and experiments",
+              "Build regression models for forecasting",
+              "Communicate data insights to non-technical stakeholders"
+            ],
+            "textbook": "Statistics for Business and Economics — Anderson, Sweeney, Williams",
+            "resources": ["Google Analytics Academy", "Coursera: Business Statistics (Duke)", "Harvard Data Science Review"],
+            "weeklyTopics": [
+              "Week 1: Descriptive Statistics & Business Metrics",
+              "Week 2: Probability & Expected Value in Decision-Making",
+              "Week 3: Hypothesis Testing — A/B Testing for Product Decisions",
+              "Week 4: Regression Analysis — Predicting Customer Behavior",
+              "Week 5: Correlation vs. Causation in Business",
+              "Week 6: Forecasting Models — Time Series & Trend Analysis",
+              "Week 7: Decision Trees & Risk Analysis",
+              "Week 8: Final Case — Data-Driven Marketing Strategy for a SaaS Product"
+            ],
+            "assignments": [
+              "A/B test design and analysis (SaaS product scenario)",
+              "Regression model: Predict customer churn",
+              "Final: Build a business dashboard with statistical insights"
+            ]
+          },
+          {
+            "id": "core-103",
+            "code": "OB 103",
+            "title": "Organizational Behavior & Leadership Foundations",
+            "weeks": 8,
+            "status": "upcoming",
+            "description": "Understand what makes teams, cultures, and leaders effective. Critical for your path from engineering manager to executive.",
+            "objectives": [
+              "Understand individual and group behavior in organizations",
+              "Develop frameworks for motivation, influence, and conflict resolution",
+              "Analyze leadership styles and their situational effectiveness",
+              "Build your personal leadership philosophy"
+            ],
+            "textbook": "Organizational Behavior — Robbins & Judge (18th Ed.)",
+            "resources": ["HBS Case: Satya Nadella's Cultural Transformation at Microsoft", "TED: Simon Sinek — Start with Why", "Stanford Social Innovation Review"],
+            "weeklyTopics": [
+              "Week 1: Individual Behavior — Personality, Perception, Motivation",
+              "Week 2: Group Dynamics & Team Effectiveness",
+              "Week 3: Leadership Theories — Transformational, Servant, Situational",
+              "Week 4: Power, Politics & Influence in Organizations",
+              "Week 5: Conflict Resolution & Negotiation",
+              "Week 6: Organizational Culture & Change",
+              "Week 7: Cross-Functional Communication",
+              "Week 8: Final: Personal Leadership Development Plan"
+            ],
+            "assignments": [
+              "360-degree self-assessment",
+              "Case analysis: Leadership failure at a tech company",
+              "Final: Personal Leadership Philosophy & 90-day exec transition plan"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "q2",
+        "title": "Quarter 2 — Finance, Marketing & Operations",
+        "months": "August – October 2026",
+        "courses": [
+          {
+            "id": "core-201",
+            "code": "FIN 201",
+            "title": "Corporate Finance & Valuation",
+            "weeks": 10,
+            "status": "locked",
+            "description": "Learn how companies are valued, how capital is raised, and how financial decisions are made at the executive level.",
+            "objectives": [
+              "Understand time value of money and DCF valuation",
+              "Analyze capital structure decisions",
+              "Value startups and mature companies",
+              "Evaluate investment decisions using NPV and IRR"
+            ],
+            "textbook": "Principles of Corporate Finance — Brealey, Myers & Allen",
+            "resources": ["Damodaran Online (NYU)", "Investopedia DCF Guide", "HBS Case: Uber Pre-IPO Valuation"],
+            "weeklyTopics": [
+              "Week 1: Time Value of Money — PV, FV, Annuities",
+              "Week 2: Capital Budgeting — NPV, IRR, Payback",
+              "Week 3: Risk & Return — CAPM, Beta",
+              "Week 4: Cost of Capital — WACC",
+              "Week 5: Capital Structure — Debt vs. Equity",
+              "Week 6: Dividend Policy & Share Buybacks",
+              "Week 7: DCF Valuation — Building a Full Model",
+              "Week 8: Comparable Company Analysis (Comps)",
+              "Week 9: M&A Basics — Deal Structure & Synergies",
+              "Week 10: Final: Value a SaaS Company from scratch"
+            ],
+            "assignments": [
+              "DCF model for a public tech company",
+              "Capital structure analysis: Okta vs. competitors",
+              "Final: Full valuation report on a startup of your choice"
+            ]
+          },
+          {
+            "id": "core-202",
+            "code": "MKT 202",
+            "title": "Marketing Management",
+            "weeks": 10,
+            "status": "locked",
+            "description": "Build the strategic and tactical marketing skills needed to launch products, build brands, and acquire customers at scale.",
+            "objectives": [
+              "Develop market segmentation, targeting, and positioning (STP) strategies",
+              "Build go-to-market plans for tech products",
+              "Understand digital marketing channels and measurement",
+              "Apply brand strategy frameworks"
+            ],
+            "textbook": "Marketing Management — Kotler & Keller (16th Ed.)",
+            "resources": ["HBS Case: Salesforce Go-to-Market Strategy", "Y Combinator: B2B Marketing Playbook", "Andrew Chen's Growth Blog"],
+            "weeklyTopics": [
+              "Week 1: Marketing Fundamentals — The 4Ps & Customer Value",
+              "Week 2: Market Research & Consumer Behavior",
+              "Week 3: STP — Segmentation, Targeting, Positioning",
+              "Week 4: Brand Strategy & Brand Equity",
+              "Week 5: B2B Marketing — Enterprise Sales Cycles",
+              "Week 6: Digital Marketing — SEO, SEM, Content, Email",
+              "Week 7: Pricing Strategy",
+              "Week 8: Product Launch Strategy",
+              "Week 9: Customer Acquisition & Retention Metrics (CAC, LTV, NRR)",
+              "Week 10: Final: Full Go-to-Market Plan for a SaaS product"
+            ],
+            "assignments": [
+              "STP analysis for an identity security product",
+              "Digital marketing audit of a competitor",
+              "Final: GTM strategy for your startup idea"
+            ]
+          },
+          {
+            "id": "core-203",
+            "code": "OPS 203",
+            "title": "Operations & Process Management",
+            "weeks": 8,
+            "status": "locked",
+            "description": "Understand how to design, manage, and optimize business operations — from supply chains to SaaS delivery pipelines.",
+            "objectives": [
+              "Apply process analysis and optimization frameworks",
+              "Understand capacity planning and resource allocation",
+              "Apply Lean and Six Sigma thinking to business operations",
+              "Manage quality and operational risk"
+            ],
+            "textbook": "Operations Management — Heizer, Render & Munson",
+            "resources": ["MIT OpenCourseWare Operations Management", "Toyota Production System Case", "HBS: Spotify Engineering Culture"],
+            "weeklyTopics": [
+              "Week 1: Process Flow Analysis & Bottlenecks",
+              "Week 2: Capacity Planning & Resource Management",
+              "Week 3: Lean Thinking & Waste Elimination",
+              "Week 4: Quality Management — Six Sigma & TQM",
+              "Week 5: Supply Chain Fundamentals",
+              "Week 6: Project Management — Critical Path, Agile, OKRs",
+              "Week 7: SaaS Operational Metrics — SLAs, Uptime, Incident Management",
+              "Week 8: Final: Operational improvement plan for a real business process"
+            ],
+            "assignments": [
+              "Process mapping exercise — map and improve an Okta internal process",
+              "Lean analysis of a software delivery pipeline",
+              "Final: Operations transformation plan"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "q3",
+        "title": "Quarter 3 — Strategy, Economics & Ethics",
+        "months": "November 2026 – January 2027",
+        "courses": [
+          {
+            "id": "core-301",
+            "code": "STR 301",
+            "title": "Competitive Strategy",
+            "weeks": 10,
+            "status": "locked",
+            "description": "Master the frameworks used by strategy consultants and CEOs. Analyze industries, build competitive advantages, and make long-term strategic bets.",
+            "objectives": [
+              "Apply Porter's Five Forces and Value Chain analysis",
+              "Develop competitive strategy using Blue Ocean and disruption frameworks",
+              "Analyze technology platform dynamics",
+              "Build a strategic plan for a business unit"
+            ],
+            "textbook": "Competitive Strategy — Michael Porter; Good Strategy Bad Strategy — Rumelt",
+            "resources": ["HBS Case: Apple Platform Strategy", "Clayton Christensen: Innovator's Dilemma", "McKinsey Strategy Insights"],
+            "weeklyTopics": [
+              "Week 1: What is Strategy? Rumelt's Good Strategy Framework",
+              "Week 2: Industry Analysis — Porter's Five Forces",
+              "Week 3: Competitive Advantage — Cost vs. Differentiation",
+              "Week 4: Value Chain Analysis",
+              "Week 5: Disruptive Innovation — Christensen Framework",
+              "Week 6: Platform & Ecosystem Strategy",
+              "Week 7: Blue Ocean Strategy — Creating New Market Space",
+              "Week 8: Corporate Strategy — Diversification & Portfolio",
+              "Week 9: Strategy in Tech — Network Effects & Winner-Take-All",
+              "Week 10: Final: Full Competitive Strategy Analysis"
+            ],
+            "assignments": [
+              "Five Forces analysis of the identity security market",
+              "Disruption case study: How Okta displaced on-premise IAM",
+              "Final: Strategic plan for a new business or product line"
+            ]
+          },
+          {
+            "id": "core-302",
+            "code": "ECON 302",
+            "title": "Managerial Economics",
+            "weeks": 8,
+            "status": "locked",
+            "description": "Apply economic thinking to business decisions — pricing, market design, incentives, and resource allocation.",
+            "objectives": [
+              "Apply microeconomic principles to business strategy",
+              "Understand pricing strategies and elasticity",
+              "Analyze market structures and competitive dynamics",
+              "Design incentive systems and compensation structures"
+            ],
+            "textbook": "Managerial Economics — Keat, Young & Erfle",
+            "resources": ["Freakonomics Podcast", "MRUniversity Economics", "HBS: Airbnb Pricing Algorithm"],
+            "weeklyTopics": [
+              "Week 1: Supply, Demand & Market Equilibrium",
+              "Week 2: Elasticity & Pricing Decisions",
+              "Week 3: Production & Cost Functions",
+              "Week 4: Market Structures — Perfect Competition to Monopoly",
+              "Week 5: Game Theory & Strategic Interaction",
+              "Week 6: Pricing Strategies — Bundling, Versioning, Freemium",
+              "Week 7: Incentive Design & Principal-Agent Problems",
+              "Week 8: Final: Pricing strategy redesign for a SaaS product"
+            ],
+            "assignments": [
+              "Elasticity analysis: Impact of price change on SaaS churn",
+              "Game theory case: Competitive response strategy",
+              "Final: Redesign the pricing model for a tech product"
+            ]
+          },
+          {
+            "id": "core-303",
+            "code": "ETH 303",
+            "title": "Business Ethics, Leadership & Corporate Governance",
+            "weeks": 8,
+            "status": "locked",
+            "description": "Explore the ethical dimensions of business leadership — from board governance to stakeholder management and responsible AI.",
+            "objectives": [
+              "Analyze ethical frameworks and apply them to business dilemmas",
+              "Understand corporate governance structures",
+              "Navigate stakeholder conflicts and ESG pressures",
+              "Lead with integrity in complex organizational environments"
+            ],
+            "textbook": "Business Ethics: Ethical Decision Making & Cases — Ferrell, Fraedrich & Ferrell",
+            "resources": ["HBS Case: Theranos Failure", "Stanford Social Innovation Review", "Harvard Business Review Ethics Series"],
+            "weeklyTopics": [
+              "Week 1: Ethical Frameworks — Utilitarianism, Deontology, Virtue Ethics",
+              "Week 2: Corporate Governance — Boards, Fiduciary Duty, Audits",
+              "Week 3: Stakeholder Theory vs. Shareholder Primacy",
+              "Week 4: Ethics in Tech — Data Privacy, AI Bias, Surveillance",
+              "Week 5: ESG — Environmental, Social, Governance Reporting",
+              "Week 6: Whistleblowing, Scandal Management & Crisis Communication",
+              "Week 7: Leadership Integrity — Case Studies in Failure",
+              "Week 8: Final: Ethical leadership framework for your future company"
+            ],
+            "assignments": [
+              "Case analysis: A tech company's data privacy decision",
+              "Board governance simulation",
+              "Final: Your company's ethics charter and governance model"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "q4",
+        "title": "Quarter 4 — Technology, Entrepreneurship & Year 1 Capstone",
+        "months": "February – April 2027",
+        "courses": [
+          {
+            "id": "core-401",
+            "code": "TEC 401",
+            "title": "Technology Strategy & Digital Transformation",
+            "weeks": 10,
+            "status": "locked",
+            "description": "Designed specifically for your background. How technology creates and destroys competitive advantage. Platform business models, AI strategy, and digital transformation leadership.",
+            "objectives": [
+              "Develop a technology strategy roadmap for a business",
+              "Analyze AI/ML as a strategic asset",
+              "Lead digital transformation initiatives",
+              "Evaluate build vs. buy vs. partner decisions"
+            ],
+            "textbook": "The Technology Fallacy — Kane, Phillips, Copulsky, Andrus",
+            "resources": ["a16z Tech Essays", "Stratechery by Ben Thompson", "MIT Sloan Management Review Digital"],
+            "weeklyTopics": [
+              "Week 1: Technology as Competitive Moat",
+              "Week 2: Platform Business Models — AWS, Salesforce, Okta",
+              "Week 3: API Economy & Ecosystem Strategy",
+              "Week 4: AI/ML Strategy — When to Build, Buy, or Partner",
+              "Week 5: Data as a Strategic Asset",
+              "Week 6: Cloud Architecture Decisions & Business Impact",
+              "Week 7: Digital Transformation — Culture, Process, Technology",
+              "Week 8: Cybersecurity & Identity as Business Enablers",
+              "Week 9: Tech M&A — Evaluating Acquisitions",
+              "Week 10: Final: Technology Strategy for your startup"
+            ],
+            "assignments": [
+              "Platform strategy analysis: How Okta built its network effects",
+              "AI strategy memo for a hypothetical CTO role",
+              "Final: Full technology strategy for your startup idea"
+            ]
+          },
+          {
+            "id": "core-402",
+            "code": "ENT 402",
+            "title": "Entrepreneurship Foundations",
+            "weeks": 10,
+            "status": "locked",
+            "description": "The foundation of your startup journey. From idea generation to business model design to your first pitch.",
+            "objectives": [
+              "Apply lean startup methodology",
+              "Develop and test a business model canvas",
+              "Conduct customer discovery interviews",
+              "Build and present an investor pitch deck"
+            ],
+            "textbook": "The Lean Startup — Eric Ries; Zero to One — Peter Thiel",
+            "resources": ["Y Combinator Startup School", "Steve Blank: Four Steps to the Epiphany", "First Round Review"],
+            "weeklyTopics": [
+              "Week 1: Founder Mindset — Opportunity Recognition",
+              "Week 2: Customer Discovery — Jobs-to-be-Done Framework",
+              "Week 3: Business Model Canvas",
+              "Week 4: Lean MVP — Build, Measure, Learn",
+              "Week 5: Market Sizing — TAM, SAM, SOM",
+              "Week 6: Unit Economics — CAC, LTV, Payback Period",
+              "Week 7: Competitive Positioning for Startups",
+              "Week 8: Fundraising Basics — Angels, Pre-seed, Seed",
+              "Week 9: Pitch Deck Construction",
+              "Week 10: Pitch Presentation & Feedback"
+            ],
+            "assignments": [
+              "Customer discovery: 5 interviews with potential users",
+              "Business Model Canvas for your startup idea",
+              "Final: Investor pitch deck + 10-min presentation"
+            ]
+          },
+          {
+            "id": "core-403",
+            "code": "CAP 403",
+            "title": "Year 1 Capstone: Business Plan Sprint",
+            "weeks": 4,
+            "status": "locked",
+            "description": "Integrate all Year 1 learnings into a comprehensive business plan for a real startup idea. This is your first major milestone.",
+            "objectives": [
+              "Synthesize finance, marketing, strategy, and operations into one business plan",
+              "Demonstrate MBA-level business thinking",
+              "Build a fundable business concept"
+            ],
+            "textbook": "N/A — applied project",
+            "resources": ["Sequoia Capital Business Plan Template", "Y Combinator Application Questions"],
+            "weeklyTopics": [
+              "Week 1: Executive Summary & Problem/Solution",
+              "Week 2: Market Analysis, Strategy & Go-to-Market",
+              "Week 3: Financial Model — 3-Year Projections",
+              "Week 4: Full Business Plan Presentation"
+            ],
+            "assignments": [
+              "Final: Complete business plan (30-40 pages) + Investor pitch deck"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "year2": {
+    "title": "Year 2: Specialization & Leadership",
+    "quarters": [
+      {
+        "id": "q5",
+        "title": "Quarter 5 — New Venture Creation & Growth Marketing",
+        "months": "May – July 2027",
+        "courses": [
+          {
+            "id": "spec-501",
+            "code": "ENT 501",
+            "title": "New Venture Creation & Business Planning",
+            "weeks": 10,
+            "status": "locked",
+            "description": "Advanced entrepreneurship: go from idea to fundable company. Build your full startup plan.",
+            "objectives": [
+              "Build a fundable business from scratch",
+              "Develop a fundraising strategy",
+              "Build a founding team framework",
+              "Navigate early-stage legal and equity structures"
+            ],
+            "textbook": "Venture Deals — Brad Feld & Jason Mendelson",
+            "resources": ["Y Combinator SAFE Notes Guide", "Cooley GO Legal Templates", "First Round Capital: Team Building"],
+            "weeklyTopics": [
+              "Week 1: From Idea to Company — Legal Structure, Incorporation",
+              "Week 2: Equity & Cap Table Basics",
+              "Week 3: SAFE Notes, Convertible Notes & Priced Rounds",
+              "Week 4: Building a Founding Team",
+              "Week 5: Product-Market Fit Frameworks",
+              "Week 6: Early Customer Acquisition & Sales",
+              "Week 7: Seed Fundraising Strategy",
+              "Week 8: Investor Relations & Due Diligence",
+              "Week 9: Board Governance for Startups",
+              "Week 10: Final: Fundraising-ready business plan"
+            ]
+          },
+          {
+            "id": "spec-502",
+            "code": "MKT 502",
+            "title": "Growth Marketing & Customer Acquisition",
+            "weeks": 10,
+            "status": "locked",
+            "description": "Master the modern growth playbook used by the best SaaS and consumer companies.",
+            "objectives": [
+              "Build a full-funnel growth strategy",
+              "Design viral and referral loops",
+              "Apply PLG (Product-Led Growth) frameworks",
+              "Run and optimize paid acquisition channels"
+            ],
+            "textbook": "Hacking Growth — Sean Ellis & Morgan Brown",
+            "resources": ["Reforge Growth Series", "Andrew Chen's Growth Library", "Lenny's Newsletter"],
+            "weeklyTopics": [
+              "Week 1: Growth Fundamentals — Acquisition, Retention, Revenue",
+              "Week 2: PLG — Product-Led Growth for SaaS",
+              "Week 3: Content Marketing & SEO for B2B",
+              "Week 4: Paid Acquisition — SEM, LinkedIn, Meta",
+              "Week 5: Viral Loops & Referral Programs",
+              "Week 6: Email Marketing & Lifecycle Automation",
+              "Week 7: Community-Led Growth",
+              "Week 8: Growth Analytics — North Star Metrics",
+              "Week 9: International Expansion Strategy",
+              "Week 10: Final: Full growth plan for your startup"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "q6",
+        "title": "Quarter 6 — Corporate Strategy & Product Management",
+        "months": "August – October 2027",
+        "courses": [
+          {
+            "id": "spec-601",
+            "code": "STR 601",
+            "title": "Corporate Strategy, M&A & Strategic Alliances",
+            "weeks": 10,
+            "status": "locked",
+            "description": "Senior leadership perspective on strategy. M&A, joint ventures, portfolio strategy, and entering new markets.",
+            "objectives": [
+              "Evaluate M&A deals from a strategic and financial lens",
+              "Design corporate portfolio strategy",
+              "Negotiate and structure strategic partnerships",
+              "Lead post-merger integration"
+            ],
+            "textbook": "The Alchemy of Air / HBS Casebook on M&A",
+            "resources": ["McKinsey M&A Insights", "Harvard Business Review Strategy", "Dealbook (NYT)"],
+            "weeklyTopics": [
+              "Week 1: Corporate vs. Business Unit Strategy",
+              "Week 2: Portfolio Strategy — BCG Matrix, GE-McKinsey",
+              "Week 3: M&A Strategy — Why Deals Succeed and Fail",
+              "Week 4: Valuation in M&A — DCF, Comps, Precedent Transactions",
+              "Week 5: Deal Structuring & Negotiation",
+              "Week 6: Due Diligence Framework",
+              "Week 7: Post-Merger Integration",
+              "Week 8: Strategic Alliances & Joint Ventures",
+              "Week 9: International Strategy — Market Entry Modes",
+              "Week 10: Final: M&A recommendation for a real company"
+            ]
+          },
+          {
+            "id": "spec-602",
+            "code": "PM 602",
+            "title": "Product Management & Innovation",
+            "weeks": 10,
+            "status": "locked",
+            "description": "The MBA perspective on product. How to define, build, and scale products that win markets.",
+            "objectives": [
+              "Apply frameworks for product discovery and prioritization",
+              "Bridge technical and business perspectives in product decisions",
+              "Build a product roadmap tied to business strategy",
+              "Lead cross-functional product teams"
+            ],
+            "textbook": "Inspired — Marty Cagan; Continuous Discovery Habits — Teresa Torres",
+            "resources": ["Lenny's Podcast", "Stratechery", "Silicon Valley Product Group Blog"],
+            "weeklyTopics": [
+              "Week 1: What Great Product Management Looks Like",
+              "Week 2: Product Discovery — Customer Interviews, Opportunity Mapping",
+              "Week 3: Prioritization Frameworks — RICE, ICE, MoSCoW",
+              "Week 4: Product Roadmap Strategy",
+              "Week 5: OKRs for Product Teams",
+              "Week 6: Pricing & Packaging for Tech Products",
+              "Week 7: Platform Product Strategy",
+              "Week 8: Product Analytics — Defining and Moving the North Star",
+              "Week 9: AI-Powered Product Strategy",
+              "Week 10: Final: Product strategy doc for your startup"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "q7",
+        "title": "Quarter 7 — Executive Leadership & Venture Finance",
+        "months": "November 2027 – January 2028",
+        "courses": [
+          {
+            "id": "spec-701",
+            "code": "LEAD 701",
+            "title": "Executive Leadership & Organizational Change",
+            "weeks": 10,
+            "status": "locked",
+            "description": "The final leadership course. How to lead at the executive level — boards, investors, culture, and transformation.",
+            "objectives": [
+              "Lead large-scale organizational change",
+              "Build and manage executive teams",
+              "Navigate board and investor relationships",
+              "Develop an executive communication style"
+            ],
+            "textbook": "The First 90 Days — Michael Watkins; High Output Management — Andy Grove",
+            "resources": ["Stanford LEAD Program", "HBR Executive Leadership Series", "Patrick Lencioni: Five Dysfunctions of a Team"],
+            "weeklyTopics": [
+              "Week 1: The CEO/CTO Transition — What Changes at the Top",
+              "Week 2: Building Executive Teams — Hiring, Firing, Trust",
+              "Week 3: Board Management & Investor Communication",
+              "Week 4: Organizational Design — Structure Follows Strategy",
+              "Week 5: Leading Large-Scale Change — Kotter's 8 Steps",
+              "Week 6: Executive Communication — Storytelling, Presence, Influence",
+              "Week 7: Culture Building — Values, Rituals, and Accountability",
+              "Week 8: Managing in Crisis",
+              "Week 9: Personal Board of Directors & Executive Coaching",
+              "Week 10: Final: 100-day executive transition plan"
+            ]
+          },
+          {
+            "id": "spec-702",
+            "code": "FIN 702",
+            "title": "Startup Finance, Fundraising & Venture Capital",
+            "weeks": 10,
+            "status": "locked",
+            "description": "Everything you need to know to raise money, manage startup finances, and understand the VC ecosystem.",
+            "objectives": [
+              "Understand the VC landscape and fund mechanics",
+              "Build a startup financial model",
+              "Structure fundraising rounds and term sheets",
+              "Manage cash flow and runway as a founder"
+            ],
+            "textbook": "Venture Deals — Brad Feld; The Hard Thing About Hard Things — Ben Horowitz",
+            "resources": ["a16z Startup Finance Guide", "Y Combinator: How to Raise Your First Round", "Sequoia Arc Program"],
+            "weeklyTopics": [
+              "Week 1: VC Fund Mechanics — How VCs Make Money",
+              "Week 2: Startup Valuation — Pre-money, Post-money, Dilution",
+              "Week 3: Term Sheet Deep Dive",
+              "Week 4: Building a 3-Year Startup Financial Model",
+              "Week 5: Unit Economics — CAC Payback, LTV:CAC, Magic Number",
+              "Week 6: Fundraising Strategy — Story, Deck, Data Room",
+              "Week 7: Managing Cash — Burn Rate, Runway, Milestones",
+              "Week 8: Down Rounds, Bridges & Difficult Capital Situations",
+              "Week 9: Exit Strategy — M&A vs. IPO",
+              "Week 10: Final: Full fundraising package for your startup"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "q8",
+        "title": "Quarter 8 — Capstone & Graduation",
+        "months": "February – April 2028",
+        "courses": [
+          {
+            "id": "spec-801",
+            "code": "PM 801",
+            "title": "Platform Business Models & AI Strategy",
+            "weeks": 8,
+            "status": "locked",
+            "description": "Advanced seminar on platform economics and AI as a strategic weapon. Directly relevant to your identity/security tech background.",
+            "objectives": [
+              "Design and scale platform business models",
+              "Integrate AI into business strategy",
+              "Understand network effects and their limits",
+              "Apply identity and data moats to competitive strategy"
+            ],
+            "textbook": "Platform Revolution — Parker, Van Alstyne & Choudary",
+            "resources": ["Stratechery", "a16z AI Canon", "OpenAI and Anthropic Strategy Analyses"],
+            "weeklyTopics": [
+              "Week 1: Platform vs. Pipeline Businesses",
+              "Week 2: Network Effects — Types, Strength, Defensibility",
+              "Week 3: Platform Launch Strategy — Solving the Cold Start Problem",
+              "Week 4: Platform Monetization",
+              "Week 5: AI Business Models — API Economy, Foundation Models",
+              "Week 6: Data Moats & Personalization at Scale",
+              "Week 7: Regulatory Risk for Platforms",
+              "Week 8: Final: Platform/AI strategy for your startup"
+            ]
+          },
+          {
+            "id": "spec-802",
+            "code": "CAP 802",
+            "title": "MBA Capstone: Launch Your Venture",
+            "weeks": 12,
+            "status": "locked",
+            "description": "Your final project. Build a complete, investor-ready startup package. This is your MBA graduation project.",
+            "objectives": [
+              "Synthesize all 2 years of learning into one venture",
+              "Build a fundable business",
+              "Present as if pitching to real investors"
+            ],
+            "textbook": "N/A — applied project",
+            "resources": ["All program resources"],
+            "weeklyTopics": [
+              "Week 1-2: Problem & Solution — Finalize your thesis",
+              "Week 3-4: Market Research & Competitive Analysis",
+              "Week 5-6: Business Model, Pricing & Unit Economics",
+              "Week 7-8: Financial Model — 3-year projections",
+              "Week 9-10: Go-to-Market & Growth Strategy",
+              "Week 11: Pitch Deck (20 slides)",
+              "Week 12: Final Presentation — Simulated Investor Panel"
+            ],
+            "assignments": [
+              "Final: Full investor-ready business plan, financial model, and pitch deck"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

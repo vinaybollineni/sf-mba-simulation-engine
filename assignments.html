@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignments — Stanford MBA Simulation</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-logo-icon">SF</div>
+      <div>
+        <span class="logo-text">MBA Simulation</span>
+        <span class="logo-sub">Stanford-Style Program</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="curriculum.html">Curriculum</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="assignments.html" class="active">Assignments</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
+    <div class="nav-hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Assignments</div>
+    <h1>Assignment Tracker</h1>
+    <p>All assignments, projects, and assessments across your program</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <!-- Summary Cards -->
+    <div class="card-grid card-grid-4 mb-32">
+      <div class="card text-center">
+        <div style="font-size:32px; font-weight:800; color:var(--stanford-red);">7</div>
+        <div style="font-size:13px; color:var(--text-secondary); margin-top:4px;">Total Assignments<br>in ACCT 101</div>
+      </div>
+      <div class="card text-center">
+        <div style="font-size:32px; font-weight:800; color:#E65100;">1</div>
+        <div style="font-size:13px; color:var(--text-secondary); margin-top:4px;">Due This Week</div>
+      </div>
+      <div class="card text-center">
+        <div style="font-size:32px; font-weight:800; color:#2E7D32;">0</div>
+        <div style="font-size:13px; color:var(--text-secondary); margin-top:4px;">Completed</div>
+      </div>
+      <div class="card text-center">
+        <div style="font-size:32px; font-weight:800; color:#1565C0;">2</div>
+        <div style="font-size:13px; color:var(--text-secondary); margin-top:4px;">Major Projects<br>in ACCT 101</div>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs" data-group="assignments">
+      <button class="tab-btn active" data-tab="active" data-group="assignments">Active (ACCT 101)</button>
+      <button class="tab-btn" data-tab="upcoming" data-group="assignments">Upcoming Courses</button>
+      <button class="tab-btn" data-tab="all" data-group="assignments">All Year 1</button>
+      <button class="tab-btn" data-tab="rubrics" data-group="assignments">Grading Rubrics</button>
+    </div>
+
+    <!-- Active Tab -->
+    <div class="tab-content active" data-tab="active" data-group="assignments">
+      <div class="alert alert-warning" style="margin-bottom:24px;">
+        <span>⚠️</span>
+        <div><strong>Week 1 Assignment Due:</strong> Problem Set 1 is due Friday May 8, 2026. Okta Case Analysis due Sunday May 10.</div>
+      </div>
+
+      <table class="assignment-table w-full">
+        <thead>
+          <tr>
+            <th>Assignment</th>
+            <th>Type</th>
+            <th>Due Date</th>
+            <th>Weight</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <strong>Problem Set 1 — Accounting Equation</strong><br>
+              <span style="font-size:12px; color:var(--text-muted);">10 transaction problems · Week 1</span>
+            </td>
+            <td><span class="badge badge-upcoming">Problem Set</span></td>
+            <td data-deadline="2026-05-08">May 8, 2026</td>
+            <td>5%</td>
+            <td><span class="badge badge-upcoming">Pending</span></td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Okta Balance Sheet Case Analysis</strong><br>
+              <span style="font-size:12px; color:var(--text-muted);">Identify & analyze line items from 10-K · Week 1</span>
+            </td>
+            <td><span class="badge badge-upcoming">Case</span></td>
+            <td data-deadline="2026-05-10">May 10, 2026</td>
+            <td>5%</td>
+            <td><span class="badge badge-upcoming">Pending</span></td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Problem Set 2 — Income Statement</strong><br>
+              <span style="font-size:12px; color:var(--text-muted);">Revenue recognition, COGS, operating expenses · Week 2</span>
+            </td>
+            <td><span class="badge badge-upcoming">Problem Set</span></td>
+            <td>May 15, 2026</td>
+            <td>5%</td>
+            <td><span class="badge badge-locked">Locked</span></td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Problem Set 3 — Cash Flow Statement</strong><br>
+              <span style="font-size:12px; color:var(--text-muted);">Direct & indirect methods · Week 4</span>
+            </td>
+            <td><span class="badge badge-upcoming">Problem Set</span></td>
+            <td>May 29, 2026</td>
+            <td>5%</td>
+            <td><span class="badge badge-locked">Locked</span></td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Mid-Course Project: 3-Statement Model</strong><br>
+              <span style="font-size:12px; color:var(--text-muted);">Build a full income statement, balance sheet, and cash flow for a startup · Week 5</span>
+            </td>
+            <td><span class="badge" style="background:#F3E5F5; color:#6A1B9A; border:1px solid #CE93D8;">Project</span></td>
+            <td>Jun 5, 2026</td>
+            <td>20%</td>
+            <td><span class="badge badge-locked">Locked</span></td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Problem Sets 4–9 (Weekly)</strong><br>
+              <span style="font-size:12px; color:var(--text-muted);">Ratios, WC management, cost accounting, depreciation · Weeks 5-9</span>
+            </td>
+            <td><span class="badge badge-upcoming">Problem Sets</span></td>
+            <td>Jun–Jul 2026</td>
+            <td>30%</td>
+            <td><span class="badge badge-locked">Locked</span></td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Final: Comprehensive Analysis of Okta's 10-K</strong><br>
+              <span style="font-size:12px; color:var(--text-muted);">Full financial analysis · income statement, balance sheet, CF, ratios, commentary · Week 10</span>
+            </td>
+            <td><span class="badge" style="background:#FFEBEE; color:#C62828; border:1px solid #EF9A9A;">Final Project</span></td>
+            <td>Jul 10, 2026</td>
+            <td>30%</td>
+            <td><span class="badge badge-locked">Locked</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Upcoming Tab -->
+    <div class="tab-content" data-tab="upcoming" data-group="assignments">
+      <div style="display:grid; gap:16px;">
+        <div class="card">
+          <div class="course-code">STAT 102 — Business Statistics</div>
+          <div class="course-title" style="font-size:15px; margin-bottom:8px;">Upcoming Assignments</div>
+          <ul style="font-size:13px; line-height:1.9; color:var(--text-secondary); padding-left:20px;">
+            <li>A/B test design and analysis (SaaS product scenario)</li>
+            <li>Regression model: predict customer churn from feature usage data</li>
+            <li>Final: Build a business analytics dashboard with statistical insights</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="course-code">OB 103 — Organizational Behavior</div>
+          <div class="course-title" style="font-size:15px; margin-bottom:8px;">Upcoming Assignments</div>
+          <ul style="font-size:13px; line-height:1.9; color:var(--text-secondary); padding-left:20px;">
+            <li>360-degree self-assessment using the Big 5 personality model</li>
+            <li>Case analysis: Leadership failure at a major tech company</li>
+            <li>Final: Personal leadership philosophy + 90-day executive transition plan</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="course-code">FIN 201 — Corporate Finance</div>
+          <div class="course-title" style="font-size:15px; margin-bottom:8px;">Upcoming Assignments</div>
+          <ul style="font-size:13px; line-height:1.9; color:var(--text-secondary); padding-left:20px;">
+            <li>DCF model for a public tech company of your choice</li>
+            <li>Capital structure analysis: Okta vs. CrowdStrike vs. Zscaler</li>
+            <li>Final: Full valuation report on a startup idea (pre-revenue)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- All Year 1 Tab -->
+    <div class="tab-content" data-tab="all" data-group="assignments">
+      <div style="display:flex; flex-direction:column; gap:24px;">
+        <div>
+          <h3 style="font-size:15px; font-weight:700; color:var(--stanford-red); margin-bottom:12px;">Quarter 1 (May–July 2026)</h3>
+          <div style="display:grid; gap:8px; font-size:13px;">
+            <div style="display:flex; justify-content:space-between; padding:10px 16px; background:var(--bg-secondary); border-radius:6px;">
+              <span><strong>ACCT 101</strong> — 10 Problem Sets + Mid-Project + Final 10-K Analysis</span>
+              <span class="badge badge-current">Active</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; padding:10px 16px; background:var(--bg-secondary); border-radius:6px;">
+              <span><strong>STAT 102</strong> — 3 Assignments + Final Analytics Dashboard</span>
+              <span class="badge badge-upcoming">Q1</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; padding:10px 16px; background:var(--bg-secondary); border-radius:6px;">
+              <span><strong>OB 103</strong> — Self-Assessment + Case Study + Leadership Plan</span>
+              <span class="badge badge-upcoming">Q1</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-size:15px; font-weight:700; color:#888; margin-bottom:12px;">Quarter 2 (Aug–Oct 2026)</h3>
+          <div style="display:grid; gap:8px; font-size:13px; opacity:0.6;">
+            <div style="display:flex; justify-content:space-between; padding:10px 16px; background:var(--bg-secondary); border-radius:6px;">
+              <span><strong>FIN 201</strong> — DCF Model + Capital Structure + Full Valuation Report</span>
+              <span class="badge badge-locked">Locked</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; padding:10px 16px; background:var(--bg-secondary); border-radius:6px;">
+              <span><strong>MKT 202</strong> — STP Analysis + Digital Audit + GTM Plan</span>
+              <span class="badge badge-locked">Locked</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; padding:10px 16px; background:var(--bg-secondary); border-radius:6px;">
+              <span><strong>OPS 203</strong> — Process Map + Lean Analysis + Ops Transformation Plan</span>
+              <span class="badge badge-locked">Locked</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-size:15px; font-weight:700; color:#888; margin-bottom:12px;">Quarter 3 (Nov 2026 – Jan 2027)</h3>
+          <div style="opacity:0.5; font-size:13px; color:var(--text-muted); padding:16px; background:var(--bg-secondary); border-radius:8px;">
+            Courses: STR 301 (Competitive Strategy), ECON 302 (Managerial Economics), ETH 303 (Ethics). Details unlock after Q2.
+          </div>
+        </div>
+        <div>
+          <h3 style="font-size:15px; font-weight:700; color:#888; margin-bottom:12px;">Quarter 4 (Feb–Apr 2027)</h3>
+          <div style="opacity:0.5; font-size:13px; color:var(--text-muted); padding:16px; background:var(--bg-secondary); border-radius:8px;">
+            Courses: TEC 401 (Tech Strategy), ENT 402 (Entrepreneurship), CAP 403 (Year 1 Capstone). Details unlock after Q3.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rubrics Tab -->
+    <div class="tab-content" data-tab="rubrics" data-group="assignments">
+      <div style="display:grid; gap:24px;">
+
+        <div class="card">
+          <h3 style="font-size:16px; font-weight:700; margin-bottom:16px; color:var(--stanford-red);">Problem Set Rubric</h3>
+          <table class="assignment-table w-full" style="font-size:13px;">
+            <thead>
+              <tr>
+                <th>Criterion</th>
+                <th>Excellent (A)</th>
+                <th>Good (B)</th>
+                <th>Satisfactory (C)</th>
+                <th>Weight</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Accuracy</strong></td>
+                <td>All answers correct, proper methodology</td>
+                <td>≥80% correct, minor errors</td>
+                <td>≥60% correct</td>
+                <td>50%</td>
+              </tr>
+              <tr>
+                <td><strong>Process/Work Shown</strong></td>
+                <td>Full workings, clear logic, labeled</td>
+                <td>Most steps shown</td>
+                <td>Final answer only</td>
+                <td>30%</td>
+              </tr>
+              <tr>
+                <td><strong>Business Insight</strong></td>
+                <td>Connects answer to real business implication</td>
+                <td>Some business context</td>
+                <td>Technical answer only</td>
+                <td>20%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card">
+          <h3 style="font-size:16px; font-weight:700; margin-bottom:16px; color:var(--stanford-red);">Case Analysis Rubric</h3>
+          <table class="assignment-table w-full" style="font-size:13px;">
+            <thead>
+              <tr>
+                <th>Criterion</th>
+                <th>Excellent (A)</th>
+                <th>Good (B)</th>
+                <th>Weight</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Framework Application</strong></td>
+                <td>Correctly applies the right framework to the problem</td>
+                <td>Applies framework with minor gaps</td>
+                <td>30%</td>
+              </tr>
+              <tr>
+                <td><strong>Depth of Analysis</strong></td>
+                <td>Goes beyond surface — identifies root causes, implications</td>
+                <td>Solid analysis, some depth missing</td>
+                <td>30%</td>
+              </tr>
+              <tr>
+                <td><strong>Data Use</strong></td>
+                <td>Uses specific numbers from the case to support claims</td>
+                <td>Some data used</td>
+                <td>20%</td>
+              </tr>
+              <tr>
+                <td><strong>Recommendation</strong></td>
+                <td>Clear, specific, actionable recommendation with rationale</td>
+                <td>General recommendation</td>
+                <td>20%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card">
+          <h3 style="font-size:16px; font-weight:700; margin-bottom:16px; color:var(--stanford-red);">Final Project Rubric (General)</h3>
+          <table class="assignment-table w-full" style="font-size:13px;">
+            <thead>
+              <tr>
+                <th>Criterion</th>
+                <th>Description</th>
+                <th>Weight</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Technical Accuracy</strong></td>
+                <td>Correct application of concepts, formulas, and frameworks</td>
+                <td>35%</td>
+              </tr>
+              <tr>
+                <td><strong>Business Judgment</strong></td>
+                <td>Quality of strategic thinking and recommendations</td>
+                <td>30%</td>
+              </tr>
+              <tr>
+                <td><strong>Clarity & Structure</strong></td>
+                <td>Well-organized, clear narrative, executive-quality writing</td>
+                <td>20%</td>
+              </tr>
+              <tr>
+                <td><strong>Real-World Relevance</strong></td>
+                <td>Applied to a real company or real startup context</td>
+                <td>15%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-bottom">
+      <div>© 2026 MBA Simulation Engine · <span>Vinay Bollineni</span> · Class of 2028</div>
+      <div><a href="dashboard.html" style="color:rgba(255,255,255,0.6); text-decoration:none;">← Dashboard</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

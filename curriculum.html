@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curriculum — Stanford MBA Simulation</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-logo-icon">SF</div>
+      <div>
+        <span class="logo-text">MBA Simulation</span>
+        <span class="logo-sub">Stanford-Style Program</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="curriculum.html" class="active">Curriculum</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="assignments.html">Assignments</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
+    <div class="nav-hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Curriculum</div>
+    <h1>Full 2-Year Curriculum</h1>
+    <p>20 courses · 4 specialization tracks · 2 capstone projects · May 2026 – April 2028</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <!-- Filter + Legend -->
+    <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px; margin-bottom:32px;">
+      <div style="display:flex; gap:8px; flex-wrap:wrap;">
+        <button class="btn btn-primary" data-filter="all" style="font-size:13px; padding:7px 14px;">All Courses</button>
+        <button class="btn btn-ghost" data-filter="current" style="font-size:13px; padding:7px 14px;">Active</button>
+        <button class="btn btn-ghost" data-filter="upcoming" style="font-size:13px; padding:7px 14px;">Upcoming</button>
+        <button class="btn btn-ghost" data-filter="locked" style="font-size:13px; padding:7px 14px;">Locked</button>
+      </div>
+      <div style="display:flex; gap:12px; align-items:center; font-size:12px; color:var(--text-muted);">
+        <span style="display:flex; align-items:center; gap:4px;"><span class="badge badge-current">●</span> Active</span>
+        <span style="display:flex; align-items:center; gap:4px;"><span class="badge badge-upcoming">●</span> Upcoming</span>
+        <span style="display:flex; align-items:center; gap:4px;"><span class="badge badge-locked">●</span> Locked</span>
+      </div>
+    </div>
+
+    <!-- Year 1 -->
+    <h2 class="section-title mb-8">Year 1 — <span>Core Foundations</span></h2>
+    <p class="section-sub">May 2026 – April 2027 · 12 courses across 4 quarters</p>
+
+    <!-- Q1 -->
+    <div class="quarter-section">
+      <div class="quarter-header">
+        <div>
+          <div class="quarter-title">Quarter 1 — Financial & Analytical Foundations</div>
+          <div class="quarter-dates">May – July 2026 · 3 courses · 26 weeks</div>
+        </div>
+        <div class="quarter-toggle">+</div>
+      </div>
+      <div class="quarter-body">
+        <div class="course-card" data-status="current">
+          <div class="course-code">ACCT 101</div>
+          <div class="course-title">Financial Accounting & Analysis</div>
+          <div class="course-desc">Master the language of business. Read and interpret financial statements, build financial models, and analyze company performance.</div>
+          <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px;">
+            <div class="badge badge-current">Active — Week 1</div>
+          </div>
+          <div class="course-meta">
+            <span>10 weeks · ~120 hrs</span>
+            <a href="courses/acct101.html" class="btn btn-primary" style="font-size:12px; padding:6px 12px;">Open Course →</a>
+          </div>
+        </div>
+
+        <div class="course-card" data-status="upcoming">
+          <div class="course-code">STAT 102</div>
+          <div class="course-title">Business Statistics & Data-Driven Decisions</div>
+          <div class="course-desc">Leverages your data engineering background. Statistical inference, A/B testing, regression models, and communicating insights to executives.</div>
+          <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px;">
+            <div class="badge badge-upcoming">Starts after ACCT 101</div>
+          </div>
+          <div class="course-meta">
+            <span>8 weeks · ~96 hrs</span>
+            <span class="badge badge-locked">🔒 Unlock in Q1</span>
+          </div>
+        </div>
+
+        <div class="course-card" data-status="upcoming">
+          <div class="course-code">OB 103</div>
+          <div class="course-title">Organizational Behavior & Leadership Foundations</div>
+          <div class="course-desc">Individual and team behavior, leadership styles, influence, conflict resolution, and your personal leadership philosophy.</div>
+          <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px;">
+            <div class="badge badge-upcoming">Q1 Concurrent</div>
+          </div>
+          <div class="course-meta">
+            <span>8 weeks · ~96 hrs</span>
+            <span class="badge badge-locked">🔒 Unlock in Q1</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="quarter-section">
+      <div class="quarter-header">
+        <div>
+          <div class="quarter-title">Quarter 2 — Finance, Marketing & Operations</div>
+          <div class="quarter-dates">August – October 2026 · 3 courses · 28 weeks</div>
+        </div>
+        <div class="quarter-toggle">+</div>
+      </div>
+      <div class="quarter-body">
+        <div class="course-card locked" data-status="locked">
+          <div class="course-code">FIN 201</div>
+          <div class="course-title">Corporate Finance & Valuation</div>
+          <div class="course-desc">Time value of money, DCF valuation, WACC, capital structure, and how to value startups and mature companies from scratch.</div>
+          <div class="course-meta">
+            <span>10 weeks · ~120 hrs</span>
+            <div class="badge badge-locked">🔒 Complete Q1</div>
+          </div>
+        </div>
+
+        <div class="course-card locked" data-status="locked">
+          <div class="course-code">MKT 202</div>
+          <div class="course-title">Marketing Management</div>
+          <div class="course-desc">STP strategy, brand equity, B2B marketing, digital channels, pricing, and go-to-market planning for tech products.</div>
+          <div class="course-meta">
+            <span>10 weeks · ~120 hrs</span>
+            <div class="badge badge-locked">🔒 Complete Q1</div>
+          </div>
+        </div>
+
+        <div class="course-card locked" data-status="locked">
+          <div class="course-code">OPS 203</div>
+          <div class="course-title">Operations & Process Management</div>
+          <div class="course-desc">Process analysis, Lean/Six Sigma, capacity planning, and operational metrics for SaaS businesses.</div>
+          <div class="course-meta">
+            <span>8 weeks · ~96 hrs</span>
+            <div class="badge badge-locked">🔒 Complete Q1</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="quarter-section">
+      <div class="quarter-header">
+        <div>
+          <div class="quarter-title">Quarter 3 — Strategy, Economics & Ethics</div>
+          <div class="quarter-dates">November 2026 – January 2027 · 3 courses · 26 weeks</div>
+        </div>
+        <div class="quarter-toggle">+</div>
+      </div>
+      <div class="quarter-body">
+        <div class="course-card locked" data-status="locked">
+          <div class="course-code">STR 301</div>
+          <div class="course-title">Competitive Strategy</div>
+          <div class="course-desc">Porter's Five Forces, disruption frameworks, Blue Ocean Strategy, platform dynamics, and network effects in tech.</div>
+          <div class="course-meta">
+            <span>10 weeks · ~120 hrs</span>
+            <div class="badge badge-locked">🔒 Complete Q2</div>
+          </div>
+        </div>
+
+        <div class="course-card locked" data-status="locked">
+          <div class="course-code">ECON 302</div>
+          <div class="course-title">Managerial Economics</div>
+          <div class="course-desc">Pricing strategies, market structures, game theory, elasticity, and incentive design for business decisions.</div>
+          <div class="course-meta">
+            <span>8 weeks · ~96 hrs</span>
+            <div class="badge badge-locked">🔒 Complete Q2</div>
+          </div>
+        </div>
+
+        <div class="course-card locked" data-status="locked">
+          <div class="course-code">ETH 303</div>
+          <div class="course-title">Business Ethics & Corporate Governance</div>
+          <div class="course-desc">Ethical frameworks, corporate governance, data privacy in tech, ESG, and leading with integrity.</div>
+          <div class="course-meta">
+            <span>8 weeks · ~96 hrs</span>
+            <div class="badge badge-locked">🔒 Complete Q2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="quarter-section">
+      <div class="quarter-header">
+        <div>
+          <div class="quarter-title">Quarter 4 — Technology, Entrepreneurship & Year 1 Capstone</div>
+          <div class="quarter-dates">February – April 2027 · 3 courses · 24 weeks</div>
+        </div>
+        <div class="quarter-toggle">+</div>
+      </div>
+      <div class="quarter-body">
+        <div class="course-card locked" data-status="locked">
+          <div class="course-code">TEC 401</div>
+          <div class="course-title">Technology Strategy & Digital Transformation</div>
+          <div class="course-desc">Platform economics, AI/ML strategy, data as a moat, cloud decisions, cybersecurity strategy, and tech M&A.</div>
+          <div class="course-meta">
+            <span>10 weeks · ~120 hrs</span>
+            <div class="badge badge-locked">🔒 Complete Q3</div>
+          </div>
+        </div>
+
+        <div class="course-card locked" data-status="locked">
+          <div class="course-code">ENT 402</div>
+          <div class="course-title">Entrepreneurship Foundations</div>
+          <div class="course-desc">Lean startup methodology, customer discovery, business model canvas, MVP, market sizing, and your first pitch deck.</div>
+          <div class="course-meta">
+            <span>10 weeks · ~120 hrs</span>
+            <div class="badge badge-locked">🔒 Complete Q3</div>
+          </div>
+        </div>
+
+        <div class="course-card locked" data-status="locked">
+          <div class="course-code">CAP 403</div>
+          <div class="course-title">Year 1 Capstone: Business Plan Sprint</div>
+          <div class="course-desc">Integrate all Year 1 learning into a complete business plan and investor pitch for your startup idea.</div>
+          <div class="course-meta">
+            <span>4 weeks · ~60 hrs</span>
+            <div class="badge badge-locked">🔒 Year 1 Final</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Year 2 -->
+    <h2 class="section-title mb-8 mt-32">Year 2 — <span>Specialization</span></h2>
+    <p class="section-sub">May 2027 – April 2028 · 8 courses · 4 specialization tracks + Final Capstone</p>
+
+    <!-- Q5 -->
+    <div class="quarter-section">
+      <div class="quarter-header">
+        <div>
+          <div class="quarter-title">Quarter 5 — New Venture Creation & Growth Marketing</div>
+          <div class="quarter-dates">May – July 2027 · 2 courses · 20 weeks</div>
+        </div>
+        <div class="quarter-toggle">+</div>
+      </div>
+      <div class="quarter-body">
+        <div class="course-card locked" data-status="locked">
+          <div class="course-code">ENT 501</div>
+          <div class="course-title">New Venture Creation & Business Planning</div>
+          <div class="course-desc">Cap tables, SAFE notes, founding team dynamics, fundraising strategy, seed rounds, and investor relations.</div>
+          <div class="course-meta">
+            <span>10 weeks · ~120 hrs</span>
+            <div class="badge badge-locked">🔒 Year 2</div>
+          </div>
+        </div>
+
+        <div class="course-card locked" data-status="locked">
+          <div class="course-code">MKT 502</div>
+          <div class="course-title">Growth Marketing & Customer Acquisition</div>
+          <div class="course-desc">Full-funnel growth strategy, PLG, viral loops, paid acquisition, community-led growth, and international expansion.</div>
+          <div class="course-meta">
+            <span>10 weeks · ~120 hrs</span>
+            <div class="badge badge-locked">🔒 Year 2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="quarter-section">
+      <div class="quarter-header">
+        <div>
+          <div class="quarter-title">Quarter 6 — Corporate Strategy & Product Management</div>
+          <div class="quarter-dates">August – October 2027 · 2 courses · 20 weeks</div>
+        </div>
+        <div class="quarter-toggle">+</div>
+      </div>
+      <div class="quarter-body">
+        <div class="course-card locked" data-status="locked">
+          <div class="course-code">STR 601</div>
+          <div class="course-title">Corporate Strategy, M&A & Strategic Alliances</div>
+          <div class="course-desc">M&A valuation, deal structuring, post-merger integration, joint ventures, and international market entry.</div>
+          <div class="course-meta">
+            <span>10 weeks · ~120 hrs</span>
+            <div class="badge badge-locked">🔒 Year 2</div>
+          </div>
+        </div>
+
+        <div class="course-card locked" data-status="locked">
+          <div class="course-code">PM 602</div>
+          <div class="course-title">Product Management & Innovation</div>
+          <div class="course-desc">Product discovery, prioritization, roadmap strategy, OKRs, pricing, and platform product thinking.</div>
+          <div class="course-meta">
+            <span>10 weeks · ~120 hrs</span>
+            <div class="badge badge-locked">🔒 Year 2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="quarter-section">
+      <div class="quarter-header">
+        <div>
+          <div class="quarter-title">Quarter 7 — Executive Leadership & Venture Finance</div>
+          <div class="quarter-dates">November 2027 – January 2028 · 2 courses · 20 weeks</div>
+        </div>
+        <div class="quarter-toggle">+</div>
+      </div>
+      <div class="quarter-body">
+        <div class="course-card locked" data-status="locked">
+          <div class="course-code">LEAD 701</div>
+          <div class="course-title">Executive Leadership & Organizational Change</div>
+          <div class="course-desc">CEO/CTO transition, board management, executive team building, culture, change management, and crisis leadership.</div>
+          <div class="course-meta">
+            <span>10 weeks · ~120 hrs</span>
+            <div class="badge badge-locked">🔒 Year 2</div>
+          </div>
+        </div>
+
+        <div class="course-card locked" data-status="locked">
+          <div class="course-code">FIN 702</div>
+          <div class="course-title">Startup Finance, Fundraising & Venture Capital</div>
+          <div class="course-desc">VC fund mechanics, term sheets, startup financial models, burn rate management, and exit strategy (M&A vs IPO).</div>
+          <div class="course-meta">
+            <span>10 weeks · ~120 hrs</span>
+            <div class="badge badge-locked">🔒 Year 2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="quarter-section">
+      <div class="quarter-header">
+        <div>
+          <div class="quarter-title">Quarter 8 — Capstone & Graduation</div>
+          <div class="quarter-dates">February – April 2028 · 2 courses · 20 weeks</div>
+        </div>
+        <div class="quarter-toggle">+</div>
+      </div>
+      <div class="quarter-body">
+        <div class="course-card locked" data-status="locked">
+          <div class="course-code">PM 801</div>
+          <div class="course-title">Platform Business Models & AI Strategy</div>
+          <div class="course-desc">Advanced seminar on platform economics, network effects, AI business models, data moats, and regulatory risk.</div>
+          <div class="course-meta">
+            <span>8 weeks · ~96 hrs</span>
+            <div class="badge badge-locked">🔒 Final Seminar</div>
+          </div>
+        </div>
+
+        <div class="course-card locked" data-status="locked">
+          <div class="course-code">CAP 802</div>
+          <div class="course-title">MBA Capstone: Launch Your Venture</div>
+          <div class="course-desc">Build a complete investor-ready startup: business plan, financial model, GTM strategy, and live investor pitch presentation.</div>
+          <div class="course-meta">
+            <span>12 weeks · ~180 hrs</span>
+            <div class="badge badge-locked">🎓 Final Project</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-bottom">
+      <div>© 2026 MBA Simulation Engine · <span>Vinay Bollineni</span> · Class of 2028</div>
+      <div><a href="index.html" style="color:rgba(255,255,255,0.6); text-decoration:none;">← Home</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
