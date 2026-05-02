@@ -294,11 +294,6 @@ body {
   border: 1px solid #90CAF9;
 }
 
-.badge-locked {
-  background: #F5F5F5;
-  color: #757575;
-  border: 1px solid #E0E0E0;
-}
 
 .badge-completed {
   background: #EDE7F6;
@@ -354,14 +349,6 @@ body {
   transform: translateY(-3px);
 }
 
-.course-card.locked {
-  opacity: 0.6;
-}
-
-.course-card.locked:hover {
-  transform: none;
-  box-shadow: var(--card-shadow);
-}
 
 .course-code {
   font-size: 11px;

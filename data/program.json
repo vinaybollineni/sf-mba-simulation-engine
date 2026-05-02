@@ -128,7 +128,7 @@
             "code": "FIN 201",
             "title": "Corporate Finance & Valuation",
             "weeks": 10,
-            "status": "locked",
+            "status": "upcoming",
             "description": "Learn how companies are valued, how capital is raised, and how financial decisions are made at the executive level.",
             "objectives": [
               "Understand time value of money and DCF valuation",
@@ -162,7 +162,7 @@
             "code": "GLOB 250",
             "title": "Global Business & Macroeconomic Environment",
             "weeks": 6,
-            "status": "locked",
+            "status": "upcoming",
             "description": "Understand the macro forces shaping business: GDP cycles, trade policy, currency risk, and geopolitical strategy. Required at Harvard (BGIE), Wharton, and every top program.",
             "objectives": [
               "Interpret macroeconomic indicators and their impact on business strategy",
@@ -192,7 +192,7 @@
             "code": "MKT 202",
             "title": "Marketing Management",
             "weeks": 10,
-            "status": "locked",
+            "status": "upcoming",
             "description": "Build the strategic and tactical marketing skills needed to launch products, build brands, and acquire customers at scale.",
             "objectives": [
               "Develop market segmentation, targeting, and positioning (STP) strategies",
@@ -227,7 +227,7 @@
             "code": "OPS 203",
             "title": "Operations & Process Management",
             "weeks": 8,
-            "status": "locked",
+            "status": "upcoming",
             "description": "Understand how to design, manage, and optimize business operations — from supply chains to SaaS delivery pipelines.",
             "objectives": [
               "Apply process analysis and optimization frameworks",
@@ -266,7 +266,7 @@
             "code": "STR 301",
             "title": "Competitive Strategy",
             "weeks": 10,
-            "status": "locked",
+            "status": "upcoming",
             "description": "Master the frameworks used by strategy consultants and CEOs. Analyze industries, build competitive advantages, and make long-term strategic bets.",
             "objectives": [
               "Apply Porter's Five Forces and Value Chain analysis",
@@ -300,7 +300,7 @@
             "code": "NEGO 250",
             "title": "Negotiation & Conflict Resolution",
             "weeks": 6,
-            "status": "locked",
+            "status": "upcoming",
             "description": "Required at Harvard, Wharton, and Stanford. Master integrative negotiation, BATNA analysis, and the psychology of influence. Among the highest direct-ROI courses in any MBA program.",
             "objectives": [
               "Apply BATNA, ZOPA, and reservation point frameworks to any negotiation",
@@ -330,7 +330,7 @@
             "code": "ECON 302",
             "title": "Managerial Economics",
             "weeks": 8,
-            "status": "locked",
+            "status": "upcoming",
             "description": "Apply economic thinking to business decisions — pricing, market design, incentives, and resource allocation.",
             "objectives": [
               "Apply microeconomic principles to business strategy",
@@ -361,7 +361,7 @@
             "code": "ETH 303",
             "title": "Business Ethics, Leadership & Corporate Governance",
             "weeks": 8,
-            "status": "locked",
+            "status": "upcoming",
             "description": "Explore the ethical dimensions of business leadership — from board governance to stakeholder management and responsible AI.",
             "objectives": [
               "Analyze ethical frameworks and apply them to business dilemmas",
@@ -399,7 +399,7 @@
             "code": "TEC 401",
             "title": "Technology Strategy & Digital Transformation",
             "weeks": 10,
-            "status": "locked",
+            "status": "upcoming",
             "description": "Designed specifically for your background. How technology creates and destroys competitive advantage. Platform business models, AI strategy, and digital transformation leadership.",
             "objectives": [
               "Develop a technology strategy roadmap for a business",
@@ -432,7 +432,7 @@
             "code": "ENT 402",
             "title": "Entrepreneurship Foundations",
             "weeks": 10,
-            "status": "locked",
+            "status": "upcoming",
             "description": "The foundation of your startup journey. From idea generation to business model design to your first pitch.",
             "objectives": [
               "Apply lean startup methodology",
@@ -465,7 +465,7 @@
             "code": "CAP 403",
             "title": "Year 1 Capstone: Business Plan Sprint",
             "weeks": 4,
-            "status": "locked",
+            "status": "upcoming",
             "description": "Integrate all Year 1 learnings into a comprehensive business plan for a real startup idea. This is your first major milestone.",
             "objectives": [
               "Synthesize finance, marketing, strategy, and operations into one business plan",
@@ -501,7 +501,7 @@
             "code": "ENT 501",
             "title": "New Venture Creation & Business Planning",
             "weeks": 10,
-            "status": "locked",
+            "status": "upcoming",
             "description": "Advanced entrepreneurship: go from idea to fundable company. Build your full startup plan.",
             "objectives": [
               "Build a fundable business from scratch",
@@ -529,7 +529,7 @@
             "code": "MKT 502",
             "title": "Growth Marketing & Customer Acquisition",
             "weeks": 10,
-            "status": "locked",
+            "status": "upcoming",
             "description": "Master the modern growth playbook used by the best SaaS and consumer companies.",
             "objectives": [
               "Build a full-funnel growth strategy",
@@ -564,7 +564,7 @@
             "code": "STR 601",
             "title": "Corporate Strategy, M&A & Strategic Alliances",
             "weeks": 10,
-            "status": "locked",
+            "status": "upcoming",
             "description": "Senior leadership perspective on strategy. M&A, joint ventures, portfolio strategy, and entering new markets.",
             "objectives": [
               "Evaluate M&A deals from a strategic and financial lens",
@@ -592,7 +592,7 @@
             "code": "PM 602",
             "title": "Product Management & Innovation",
             "weeks": 10,
-            "status": "locked",
+            "status": "upcoming",
             "description": "The MBA perspective on product. How to define, build, and scale products that win markets.",
             "objectives": [
               "Apply frameworks for product discovery and prioritization",
@@ -627,7 +627,7 @@
             "code": "LEAD 701",
             "title": "Executive Leadership & Organizational Change",
             "weeks": 10,
-            "status": "locked",
+            "status": "upcoming",
             "description": "The final leadership course. How to lead at the executive level — boards, investors, culture, and transformation.",
             "objectives": [
               "Lead large-scale organizational change",
@@ -655,7 +655,7 @@
             "code": "FIN 702",
             "title": "Startup Finance, Fundraising & Venture Capital",
             "weeks": 10,
-            "status": "locked",
+            "status": "upcoming",
             "description": "Everything you need to know to raise money, manage startup finances, and understand the VC ecosystem.",
             "objectives": [
               "Understand the VC landscape and fund mechanics",
@@ -690,7 +690,7 @@
             "code": "PM 801",
             "title": "Platform Business Models & AI Strategy",
             "weeks": 8,
-            "status": "locked",
+            "status": "upcoming",
             "description": "Advanced seminar on platform economics and AI as a strategic weapon. Directly relevant to your identity/security tech background.",
             "objectives": [
               "Design and scale platform business models",
@@ -716,7 +716,7 @@
             "code": "CAP 802",
             "title": "MBA Capstone: Launch Your Venture",
             "weeks": 12,
-            "status": "locked",
+            "status": "upcoming",
             "description": "Your final project. Build a complete, investor-ready startup package. This is your MBA graduation project.",
             "objectives": [
               "Synthesize all 2 years of learning into one venture",
