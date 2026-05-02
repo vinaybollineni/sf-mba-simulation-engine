@@ -651,16 +651,16 @@ body {
   color: white;
 }
 
-.btn-ghost {
-  background: transparent;
-  color: white;
-  border: 2px solid rgba(255,255,255,0.55);
+.btn.btn-ghost {
+  background: transparent !important;
+  color: white !important;
+  border: 2px solid rgba(255,255,255,0.55) !important;
 }
 
-.btn-ghost:hover {
-  background: rgba(255,255,255,0.12);
-  border-color: rgba(255,255,255,0.8);
-  color: white;
+.btn.btn-ghost:hover {
+  background: rgba(255,255,255,0.12) !important;
+  border-color: rgba(255,255,255,0.85) !important;
+  color: white !important;
 }
 
 .btn-ghost {
