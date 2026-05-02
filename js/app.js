@@ -201,7 +201,7 @@ document.querySelectorAll('.course-card').forEach(card => {
   if (badge) badge.remove();
 
   const btn = document.createElement('a');
-  btn.href = `courses/course.html?code=${urlCode}`;
+  btn.href = `courses/${urlCode.toLowerCase()}.html`;
   btn.className = 'btn btn-primary';
   btn.style.cssText = 'font-size:12px; padding:6px 12px;';
   btn.textContent = 'Open Course →';
