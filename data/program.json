@@ -30,8 +30,10 @@
               "Analyze financial ratios and business performance",
               "Build basic financial models from scratch"
             ],
-            "textbook": "Financial Accounting, 5th Ed. — Horngren, Sundem, Elliott",
-            "resources": ["HBS Case: Starbucks Financial Analysis", "WSJ Financial Statements Tutorial", "Khan Academy Accounting Series"],
+            "textbook": "Financial & Managerial Accounting for MBAs — Dyckman, Magee & Pfeiffer (Wharton MBA text, Cambridge Business Publishers)",
+            "textbook_free_bridge": "Financial & Managerial Accounting — Horngren (Internet Archive, free)",
+            "cases": ["MIT Sloan OCW 15.515 course materials", "Okta 10-K FY2025 (SEC EDGAR)", "MIT Sloan Accounting Case Studies (free)"],
+            "resources": ["MIT OCW 15.515 Financial Accounting", "Khan Academy Accounting Series", "Accounting Stuff YouTube", "CFI Financial Ratios Guide"],
             "weeklyTopics": [
               "Week 1: The Accounting Equation & Double-Entry Bookkeeping",
               "Week 2: Income Statement — Revenue Recognition & Expenses",
@@ -63,8 +65,9 @@
               "Build regression models for forecasting",
               "Communicate data insights to non-technical stakeholders"
             ],
-            "textbook": "Statistics for Business and Economics — Anderson, Sweeney, Williams",
-            "resources": ["Google Analytics Academy", "Coursera: Business Statistics (Duke)", "Harvard Data Science Review"],
+            "textbook": "Statistics for Business and Economics — Anderson, Sweeney, Williams + MIT OCW 15.075 (Applied Statistics for Engineers & Scientists)",
+            "cases": ["MIT Sloan case studies on data-driven decisions (free)", "Okta product analytics scenario"],
+            "resources": ["MIT OCW 15.075 Applied Statistics", "Khan Academy Statistics", "Damodaran base rate data sets"],
             "weeklyTopics": [
               "Week 1: Descriptive Statistics & Business Metrics",
               "Week 2: Probability & Expected Value in Decision-Making",
@@ -94,8 +97,9 @@
               "Analyze leadership styles and their situational effectiveness",
               "Build your personal leadership philosophy"
             ],
-            "textbook": "Organizational Behavior — Robbins & Judge (18th Ed.)",
-            "resources": ["HBS Case: Satya Nadella's Cultural Transformation at Microsoft", "TED: Simon Sinek — Start with Why", "Stanford Social Innovation Review"],
+            "textbook": "Radical Candor — Kim Scott (Stanford GSB leadership courses) + Multipliers — Liz Wiseman (both free on Internet Archive)",
+            "cases": ["HBS Case: Satya Nadella at Microsoft — Instilling a Growth Mindset (~$10)", "MIT Sloan Leadership & Ethics free cases", "Stanford GSB Podcases (free)"],
+            "resources": ["Radical Candor — Kim Scott (Archive.org free)", "Multipliers — Liz Wiseman (Archive.org free)", "MIT Sloan Leadership Cases (free)", "First Round Review leadership articles"],
             "weeklyTopics": [
               "Week 1: Individual Behavior — Personality, Perception, Motivation",
               "Week 2: Group Dynamics & Team Effectiveness",
@@ -132,8 +136,9 @@
               "Value startups and mature companies",
               "Evaluate investment decisions using NPV and IRR"
             ],
-            "textbook": "Principles of Corporate Finance — Brealey, Myers & Allen",
-            "resources": ["Damodaran Online (NYU)", "Investopedia DCF Guide", "HBS Case: Uber Pre-IPO Valuation"],
+            "textbook": "Principles of Corporate Finance — Brealey, Myers & Allen (used at Wharton, MIT Sloan, Columbia — free on Internet Archive)",
+            "cases": ["HBS Case: Uber Technologies Pre-IPO Valuation (~$10)", "MIT Sloan OCW finance problem sets (free)", "Damodaran company valuation datasets (free)"],
+            "resources": ["Damodaran Valuation Online Class — NYU Stern (free)", "Damodaran YouTube Channel (free)", "CFI DCF Modeling Guide (free)", "MIT OCW MBA First Semester Core (free)"],
             "weeklyTopics": [
               "Week 1: Time Value of Money — PV, FV, Annuities",
               "Week 2: Capital Budgeting — NPV, IRR, Payback",
@@ -165,8 +170,10 @@
               "Understand digital marketing channels and measurement",
               "Apply brand strategy frameworks"
             ],
-            "textbook": "Marketing Management — Kotler & Keller (16th Ed.)",
-            "resources": ["HBS Case: Salesforce Go-to-Market Strategy", "Y Combinator: B2B Marketing Playbook", "Andrew Chen's Growth Blog"],
+            "textbook": "Crossing the Chasm — Geoffrey Moore (Stanford/HBS tech marketing, free on Archive) + Obviously Awesome — April Dunford (positioning, buy/library)",
+            "textbook_reference": "Marketing Management — Kotler & Keller (use as reference for STP/brand frameworks, free on Archive)",
+            "cases": ["HBS Case: Salesforce.com Go-to-Market Strategy (~$10)", "Stanford GSB: Evernote Growth Options (free)", "MIT Sloan entrepreneurship cases (free)"],
+            "resources": ["Crossing the Chasm — Moore (Archive.org free)", "Obviously Awesome — Dunford (buy)", "Andrew Chen essays (free)", "Lenny's Newsletter (free)", "YC B2B Marketing Playbook (free)"],
             "weeklyTopics": [
               "Week 1: Marketing Fundamentals — The 4Ps & Customer Value",
               "Week 2: Market Research & Consumer Behavior",
@@ -198,8 +205,9 @@
               "Apply Lean and Six Sigma thinking to business operations",
               "Manage quality and operational risk"
             ],
-            "textbook": "Operations Management — Heizer, Render & Munson",
-            "resources": ["MIT OpenCourseWare Operations Management", "Toyota Production System Case", "HBS: Spotify Engineering Culture"],
+            "textbook": "Matching Supply with Demand — Cachon & Terwiesch (Wharton MBA operations text — free on Internet Archive)",
+            "cases": ["MIT Sloan Operations Management free cases", "Toyota Production System Case (MIT Sloan free)", "HBS: Zara Supply Chain (~$10)"],
+            "resources": ["Matching Supply with Demand — Cachon/Terwiesch (Archive.org free)", "MIT OCW Operations Management (free)", "MIT Sloan Teaching Resources Library (free)"],
             "weeklyTopics": [
               "Week 1: Process Flow Analysis & Bottlenecks",
               "Week 2: Capacity Planning & Resource Management",
@@ -236,8 +244,9 @@
               "Analyze technology platform dynamics",
               "Build a strategic plan for a business unit"
             ],
-            "textbook": "Competitive Strategy — Michael Porter; Good Strategy Bad Strategy — Rumelt",
-            "resources": ["HBS Case: Apple Platform Strategy", "Clayton Christensen: Innovator's Dilemma", "McKinsey Strategy Insights"],
+            "textbook": "Competitive Strategy — Michael Porter (used at every top MBA program, free on Archive) + Good Strategy Bad Strategy — Rumelt (buy/library)",
+            "cases": ["Stanford GSB: Amazon.com Marching Toward Profitability (free)", "HBS: Apple Inc. Platform Strategy (~$10)", "MIT Sloan Strategy cases (free)", "Acquired Podcast: Nvidia episode (free)"],
+            "resources": ["Porter Competitive Strategy (Archive.org free)", "Good Strategy Bad Strategy (buy)", "McKinsey Insights (free)", "Stratechery by Ben Thompson (free daily)"],
             "weeklyTopics": [
               "Week 1: What is Strategy? Rumelt's Good Strategy Framework",
               "Week 2: Industry Analysis — Porter's Five Forces",
