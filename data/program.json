@@ -120,8 +120,8 @@
       },
       {
         "id": "q2",
-        "title": "Quarter 2 — Finance, Marketing & Operations",
-        "months": "August – October 2026",
+        "title": "Quarter 2 — Finance, Global Business, Marketing & Operations",
+        "months": "August – November 2026",
         "courses": [
           {
             "id": "core-201",
@@ -258,8 +258,8 @@
       },
       {
         "id": "q3",
-        "title": "Quarter 3 — Strategy, Economics & Ethics",
-        "months": "November 2026 – January 2027",
+        "title": "Quarter 3 — Strategy, Negotiation, Economics & Ethics",
+        "months": "December 2026 – March 2027",
         "courses": [
           {
             "id": "core-301",
@@ -392,7 +392,7 @@
       {
         "id": "q4",
         "title": "Quarter 4 — Technology, Entrepreneurship & Year 1 Capstone",
-        "months": "February – April 2027",
+        "months": "April – July 2027",
         "courses": [
           {
             "id": "core-401",
@@ -494,7 +494,7 @@
       {
         "id": "q5",
         "title": "Quarter 5 — New Venture Creation & Growth Marketing",
-        "months": "May – July 2027",
+        "months": "August – October 2027",
         "courses": [
           {
             "id": "spec-501",
@@ -557,7 +557,7 @@
       {
         "id": "q6",
         "title": "Quarter 6 — Corporate Strategy & Product Management",
-        "months": "August – October 2027",
+        "months": "November 2027 – January 2028",
         "courses": [
           {
             "id": "spec-601",
@@ -620,7 +620,7 @@
       {
         "id": "q7",
         "title": "Quarter 7 — Executive Leadership & Venture Finance",
-        "months": "November 2027 – January 2028",
+        "months": "February – April 2028",
         "courses": [
           {
             "id": "spec-701",
@@ -683,7 +683,7 @@
       {
         "id": "q8",
         "title": "Quarter 8 — Capstone & Graduation",
-        "months": "February – April 2028",
+        "months": "May – July 2028",
         "courses": [
           {
             "id": "spec-801",
